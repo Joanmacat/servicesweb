@@ -1,0 +1,11 @@
+2023-12-14 10:16:12.756 [info] Extension host with pid 5475 started
+2023-12-14 10:16:12.756 [info] Skipping acquiring lock for /home/vazda/Escriptori/Projectes/servicesweb/User/workspaceStorage/907161678b2dc6b7dfc89758f71751a6.
+2023-12-14 10:16:13.201 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2023-12-14 10:16:13.362 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2023-12-14 10:16:13.638 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-12-14 10:16:14.556 [info] Eager extensions activated
+2023-12-14 10:16:14.779 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-12-14 10:16:14.818 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-12-14 10:17:10.289 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-12-14 10:17:25.302 [info] Extension host terminating: renderer closed the MessagePort
+2023-12-14 10:17:25.318 [info] Extension host with pid 5475 exiting with code 0
