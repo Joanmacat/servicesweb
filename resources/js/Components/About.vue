@@ -1,5 +1,8 @@
 <script setup>
+import Footer from './Footer.vue';
+
 </script>
+
 <template>
     <!-- FAQ -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -279,6 +282,7 @@
         <!-- End Accordion -->
       </div>
     </div>
+    <Footer></Footer>
     <!-- End FAQ -->
   </template>
   
