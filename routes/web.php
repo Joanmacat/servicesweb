@@ -35,6 +35,15 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/terms-and-conditions', function () {
+    return Inertia::render('Footer/Terms', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 Route::get('/contact', function () {
     return Inertia::render('ContactPage', [
         'canLogin' => Route::has('login'),
