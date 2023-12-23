@@ -53,6 +53,15 @@ Route::get('/privacy', function () {
     ]);
 });
 
+Route::get('/cookies', function () {
+    return Inertia::render('Footer/Cookies', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 Route::get('/contact', function () {
     return Inertia::render('ContactPage', [
         'canLogin' => Route::has('login'),
