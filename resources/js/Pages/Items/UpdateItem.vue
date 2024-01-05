@@ -66,14 +66,12 @@ const updateItem = (id) => {
               class="block mb-2 text-sm font-medium dark:text-white"
               >Category</label
             >
-            <input
-              type="text"
-              id="hs-feedback-post-category-1"
-              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
-              placeholder="Consultancy, accountant, restaurant..."
-              v-model="form.category_name"
-              required
-            />
+            <select name="cars" id="cars" v-model="form.category_name">
+              <option value="" disabled selected>Select a category</option>
+              <option value="Accountant">Accountant</option>
+              <option value="Assessment">Assessment</option>
+              <option value="Advocacy">Advocacy</option>
+            </select>
           </div>
 
           <div class="mb-4 sm:mb-8">
