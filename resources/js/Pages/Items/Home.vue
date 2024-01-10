@@ -10,6 +10,8 @@ const props = defineProps({
     items: Array
 })
 
+const categoryList = [...new Set(props.items.map(item => item.category_name))];
+
 const servicesList = props.items;
 
 /** filterServices in the input **/
@@ -81,8 +83,8 @@ const hashtagToSearchInput = (value) => {
       </div>
     </form>
     <br />
-    <button v-for="item in items" @click="hashtagToSearchInput(item.category_name)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-      #{{ item.category_name }}
+    <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+      <a href="#card-grid">#{{ item }}</a>
     </button>
     <!-- GRID -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">
@@ -98,18 +100,24 @@ const hashtagToSearchInput = (value) => {
           :link="item.url"
         ></Card>
 
-        <!-- Filtered card -->
-        <Card
-          v-for="item in filterServices"
-          v-show="searchInput !== ''"
-          :title="item.company_name"
-          :description="item.description"
-          :category="item.category_name"
-          :image="item.image_url"
-          :link="item.url"
-        ></Card>
+      <!-- Filtered card -->
+      <Card
+         id="card"
+         v-for="item in filterServices"
+         v-show="searchInput !== ''"
+         :title="item.company_name"
+         :description="item.description"
+         :category="item.category_name"
+         :image="item.image_url"
+         :link="item.url"
+       ></Card>
       <!-- END GRID -->
     </div>
     <!-- END CONTAINER -->
   </div>
 </template>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
