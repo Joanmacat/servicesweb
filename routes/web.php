@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ItemController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -71,6 +72,8 @@ Route::get('/contact', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::post('/contact', ContactController::class)->name('contact');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
