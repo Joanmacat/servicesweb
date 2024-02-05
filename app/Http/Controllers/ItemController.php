@@ -35,11 +35,11 @@ class ItemController extends Controller
     {
 
         $items = Cache::remember('items', 5, function () {
-            return Item::paginate(5);
+            return Item::all();
         });
 
         return Inertia::render('Items/Home', [
-            'items' => $items->items()
+            'items' => $items
         ]);
 
     }
