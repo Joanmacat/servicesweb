@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Item;
+use Illuminate\Support\Facades\Cache;
 use Inertia\Inertia;
 use Inertia\Response;
 use DB;
@@ -13,9 +14,13 @@ class ItemController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): Response
+    public function index()
     {
-        $items = Item::all();
+        //$items = Item::all();
+
+        $items = Cache::remember('items', 5, function () {
+            return Item::all();
+        });
 
         return Inertia::render('Items/Index', [
             'items' => $items
@@ -26,12 +31,15 @@ class ItemController extends Controller
     /**
      * Display a listing of the resource to Home component.
      */
-    public function indexHome(): Response
+    public function indexHome()
     {
-        $items = Item::all();
+
+        $items = Cache::remember('items', 5, function () {
+            return Item::paginate(5);
+        });
 
         return Inertia::render('Items/Home', [
-            'items' => $items
+            'items' => $items->items()
         ]);
 
     }

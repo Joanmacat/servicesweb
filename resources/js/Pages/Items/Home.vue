@@ -7,8 +7,11 @@ import HomeNavbar from '../../Components/HomeNavbar.vue';
 let searchInput = ref("");
 
 const props = defineProps({
-    items: Array
-})
+    items: {
+        type: Array,
+        required: true // Opcional, dependiendo de si items es requerido o no
+    }
+});
 
 const categoryList = [...new Set(props.items.map(item => item.category_name))];
 
