@@ -96,6 +96,7 @@ const hashtagToSearchInput = (value) => {
       <Card
           v-for="item in items"
           v-show="searchInput == ''"
+          class="card-hidden"
           :title="item.company_name"
           :description="item.description"
           :category="item.category_name"
@@ -106,6 +107,7 @@ const hashtagToSearchInput = (value) => {
       <!-- Filtered card -->
       <Card
          id="card"
+         class="card-hidden"
          v-for="item in filterServices"
          v-show="searchInput !== ''"
          :title="item.company_name"
@@ -123,4 +125,5 @@ const hashtagToSearchInput = (value) => {
   html {
     scroll-behavior: smooth;
   }
+
 </style>

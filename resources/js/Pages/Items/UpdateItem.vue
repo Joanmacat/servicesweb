@@ -1,5 +1,7 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
 
 const props = defineProps({
   id: ''
@@ -16,8 +18,13 @@ const form = useForm({
 })
 
 const updateItem = (id) => {
-  if(confirm("Do you really want to update the item?")) {
-    form.patch(route('items.update', id));
+  try {
+    if(confirm("Do you really want to update the item?")) {
+      form.patch(route('items.update', id));
+      toast.warn("Item updated successfully")
+    } 
+  } catch (error) {
+    toast.error("Something went wrong: ", error);
   }
 }
 
