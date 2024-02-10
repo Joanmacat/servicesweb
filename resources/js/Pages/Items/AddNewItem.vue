@@ -1,5 +1,8 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+
 const form = useForm({
     company_name: '',
     category_name: '',
@@ -10,8 +13,17 @@ const form = useForm({
 })
 
 const addNewItem = () => {
-  if(confirm('Do you want to add the item?')) {
+  /*if(confirm('Do you want to add the item?')) {
     form.post(route('items.store'));
+    toast.success("")
+  }*/
+  try {
+    if(confirm('Do you want to add the item?')) {
+      form.post(route('items.store'));
+      toast.success("Item added successfully");
+    }
+  } catch (error) {
+    toast.error("Error during process: ", error);
   }
 }
 
