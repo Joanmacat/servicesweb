@@ -19,7 +19,6 @@ class ContactController extends Controller
             $request->message
         ));
 
-        notify()->success('Welcome to Laravel Notify ⚡️');
         return redirect()->back();
     }
 }

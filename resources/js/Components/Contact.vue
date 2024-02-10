@@ -1,6 +1,7 @@
 <script setup>
 import Footer from './Footer.vue';
-import { ref } from 'vue';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
 import { useForm } from '@inertiajs/vue3';
 
 const form = useForm({
@@ -12,10 +13,16 @@ const form = useForm({
 })
 
 const submit = () => {
-  form.post(route('contact'),{
-    preserveScroll: true,
-    onSuccess: () => form.reset(),
-  })
+  try {
+    form.post(route('contact'),{
+      preserveScroll: true,
+      onSuccess: () => form.reset(),
+    });
+    toast.success("Message sent successfully");
+  } catch (error) {
+    // Maneix l'error aquí
+    toast.error("Error sent: ", error);
+  }
 }
 </script>
 
