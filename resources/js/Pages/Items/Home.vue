@@ -7,31 +7,28 @@ import HomeNavbar from '../../Components/HomeNavbar.vue';
 let searchInput = ref("");
 
 const props = defineProps({
-    items: {
-        type: Array,
-        required: true // Opcional, dependiendo de si items es requerido o no
-    }
-});
+    items: Object
+})
 
-const categoryList = [...new Set(props.items.map(item => item.category_name))];
+//const categoryList = [...new Set(props.items.map(item => item.category_name))];
 
 const servicesList = props.items;
 
 /** filterServices in the input **/
 
-const filterServices = computed(() => {
-  const searchValue = searchInput.value.toLowerCase();
+// const filterServices = computed(() => {
+//   const searchValue = searchInput.value.toLowerCase();
 
-  const titleFiltered = servicesList.filter(({ company_name }) =>
-    company_name.toLowerCase().includes(searchValue)
-  );
+//   const titleFiltered = servicesList.filter(({ company_name }) =>
+//     company_name.toLowerCase().includes(searchValue)
+//   );
 
-  const categoryFiltered = servicesList.filter(({ category_name }) =>
-    category_name.toLowerCase().includes(searchValue)
-  );
+//   const categoryFiltered = servicesList.filter(({ category_name }) =>
+//     category_name.toLowerCase().includes(searchValue)
+//   );
 
-  return titleFiltered.length > 0 ? titleFiltered : categoryFiltered;
-});
+//   return titleFiltered.length > 0 ? titleFiltered : categoryFiltered;
+// });
 
 /** Hashtag buttons **/
 const hashtagToSearchInput = (value) => {
@@ -86,15 +83,15 @@ const hashtagToSearchInput = (value) => {
       </div>
     </form>
     <br />
-    <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+    <!--<button v-for="item in items" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
       <a href="#card-grid">#{{ item }}</a>
-    </button>
+    </button>-->
     <!-- GRID -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">
 
       <!-- Regular card -->  
       <Card
-          v-for="item in items"
+          v-for="item in items.data"
           v-show="searchInput == ''"
           class="card-hidden"
           :title="item.company_name"
@@ -103,7 +100,6 @@ const hashtagToSearchInput = (value) => {
           :image="item.image_url"
           :link="item.url"
         ></Card>
-
       <!-- Filtered card -->
       <Card
          id="card"
@@ -119,6 +115,49 @@ const hashtagToSearchInput = (value) => {
       <!-- END GRID -->
     </div>
     <!-- END CONTAINER -->
+      <!-- Pagination -->
+      <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+  <div class="flex flex-1 justify-between sm:hidden">
+    <a href="#" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
+    <a href="#" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+  </div>
+  <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+    <div>
+      <p class="text-sm text-gray-700">
+        Showing
+        <span class="font-medium">{{ items.to }}</span>
+        of
+        <span class="font-medium">{{ items.total }}</span>
+        results
+      </p>
+    </div>
+    <div>
+      <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+        <a :href="items.prev_page_url" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+          <span class="sr-only">Previous</span>
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+        <a href="?page=1" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+        <a href="?page=2" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+        <a href="?page=3" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+        <a href="?page=4" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">4</a>
+        <a href="?page=5" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">5</a>
+        <a href="?page=6" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">6</a>
+        <a :href="items.next_page_url" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+          <span class="sr-only">Next</span>
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <!-- End Pagination -->
   </div>
 </template>
 <style>
