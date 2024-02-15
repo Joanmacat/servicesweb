@@ -100,7 +100,12 @@ Route::resource('items', ItemController::class)
     ->only(['index', 'store'])
     ->middleware(['auth', 'verified']);
 
-Route::get('/', [ItemController::class, 'indexHome']);
+Route::get('/', function() {
+    //return Item::paginate(5);
+        return Inertia::render('Items/Home', [
+              'items' => Item::paginate(5)
+        ]);
+});
 
 Route::delete('items/{item}', [ItemController::class, 'destroy'])->name('items.destroy');
 Route::patch('items/{item}', [ItemController::class, 'update'])->name('items.update');

@@ -16,29 +16,12 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //$items = Item::all();
 
         $items = Cache::remember('items', 5, function () {
             return Item::all();
         });
 
         return Inertia::render('Items/Index', [
-            'items' => $items
-        ]);
-
-    }
-
-    /**
-     * Display a listing of the resource to Home component.
-     */
-    public function indexHome()
-    {
-
-        $items = Cache::remember('items', 5, function () {
-            return Item::all();
-        });
-
-        return Inertia::render('Items/Home', [
             'items' => $items
         ]);
 

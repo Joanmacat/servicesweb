@@ -6,7 +6,7 @@ import AddNewItem from './AddNewItem.vue';
 import UpdateItem from './UpdateItem.vue';
 
 const props = defineProps({
-    items: Array
+    items: Object
 })
 
 const form = useForm({
