@@ -88,8 +88,8 @@
 
       <div class="flex justify-between items-center">
         <div class="mt-3">
-          <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
-          <p class="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2023 Brand.</p>
+          <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Andorra Connect</a>
+          <p class="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2024 Andorra Connect.</p>
         </div>
       </div>
       <!-- End Col -->
