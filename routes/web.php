@@ -103,7 +103,7 @@ Route::resource('items', ItemController::class)
 Route::get('/', function() {
     //return Item::paginate(5);
         return Inertia::render('Items/Home', [
-              'items' => Item::paginate(5)
+              'items' => Item::paginate(10)
         ]);
 });
 

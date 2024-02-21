@@ -2,33 +2,34 @@
 import Card from "./Card.vue";
 import Title from "./Title.vue";
 import { ref, computed } from 'vue';
+import Footer from '../../Components/Footer.vue';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 
 let searchInput = ref("");
 
 const props = defineProps({
-    items: Object
+    items: Array
 })
 
-//const categoryList = [...new Set(props.items.map(item => item.category_name))];
+let categoryList = [...new Set(props.items.data.map(item => item.category_name))];
 
-const servicesList = props.items;
+const servicesList = props.items.data;
 
 /** filterServices in the input **/
 
-// const filterServices = computed(() => {
-//   const searchValue = searchInput.value.toLowerCase();
+ const filterServices = computed(() => {
+   const searchValue = searchInput.value.toLowerCase();
 
-//   const titleFiltered = servicesList.filter(({ company_name }) =>
-//     company_name.toLowerCase().includes(searchValue)
-//   );
+   const titleFiltered = servicesList.filter(({ company_name }) =>
+     company_name.toLowerCase().includes(searchValue)
+   );
 
-//   const categoryFiltered = servicesList.filter(({ category_name }) =>
-//     category_name.toLowerCase().includes(searchValue)
-//   );
+   const categoryFiltered = servicesList.filter(({ category_name }) =>
+     category_name.toLowerCase().includes(searchValue)
+   );
 
-//   return titleFiltered.length > 0 ? titleFiltered : categoryFiltered;
-// });
+   return titleFiltered.length > 0 ? titleFiltered : categoryFiltered;
+ });
 
 /** Hashtag buttons **/
 const hashtagToSearchInput = (value) => {
@@ -83,9 +84,9 @@ const hashtagToSearchInput = (value) => {
       </div>
     </form>
     <br />
-    <!--<button v-for="item in items" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+    <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
       <a href="#card-grid">#{{ item }}</a>
-    </button>-->
+    </button>
     <!-- GRID -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">
 
@@ -156,7 +157,7 @@ const hashtagToSearchInput = (value) => {
     </div>
   </div>
 </div>
-
+<Footer></Footer>
   <!-- End Pagination -->
   </div>
 </template>
