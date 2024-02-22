@@ -99,6 +99,7 @@ const hashtagToSearchInput = (value) => {
           :description="item.description"
           :category="item.category_name"
           :image="item.image_url"
+          :map="item.map"
           :link="item.url"
         ></Card>
       <!-- Filtered card -->
@@ -110,6 +111,7 @@ const hashtagToSearchInput = (value) => {
          :title="item.company_name"
          :description="item.description"
          :category="item.category_name"
+         :map="item.map"
          :image="item.image_url"
          :link="item.url"
        ></Card>
@@ -117,7 +119,7 @@ const hashtagToSearchInput = (value) => {
     </div>
     <!-- END CONTAINER -->
       <!-- Pagination -->
-      <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+      <div class="flex items-center justify-between border-gray-200 bg-white px-4 py-3 sm:px-6">
   <div class="flex flex-1 justify-between sm:hidden">
     <a href="#" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
     <a href="#" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>

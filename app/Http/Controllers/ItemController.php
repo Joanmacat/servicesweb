@@ -46,6 +46,7 @@ class ItemController extends Controller
             'location' => 'required',
             'url' => 'required',
             'image_url' => 'required',
+            'map' => 'required',
             'description' => 'required',
         ]);
         $item = new Item($request->input());
@@ -85,6 +86,7 @@ class ItemController extends Controller
             'location' => 'required',
             'url' => 'required',
             'image_url' => 'required',
+            'map' => 'required',
             'description' => 'required',
         ]);
         $item->company_name = $request->company_name;
@@ -92,6 +94,7 @@ class ItemController extends Controller
         $item->location = $request->location;
         $item->url = $request->url;
         $item->image_url = $request->image_url;
+        $item->map = $request->map;
         $item->description = $request->description;
         $item->save();
         sleep(1);
