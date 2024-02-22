@@ -14,6 +14,7 @@ const form = useForm({
     location: '',
     url: '',
     image_url: '',
+    map: '',
     description: '',
 })
 
@@ -125,6 +126,22 @@ const updateItem = (id) => {
               class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="https://www.example.com/image.jpg"
               v-model="form.image_url"
+              required
+            />
+          </div>
+
+          <div class="mb-4 sm:mb-8">
+            <label
+              for="hs-feedback-post-image-url-1"
+              class="block mb-2 text-sm font-medium dark:text-white"
+              >Map</label
+            >
+            <input
+              type="map"
+              id="hs-feedback-post-image-url-1"
+              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+              placeholder="Google maps, Bing, etc."
+              v-model="form.map"
               required
             />
           </div>

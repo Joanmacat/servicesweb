@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('location');
             $table->string('url');
             $table->string('image_url');
+            $table->string('map');
             $table->string('description');
             $table->timestamps();
         });
