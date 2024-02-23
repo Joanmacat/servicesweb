@@ -37,6 +37,15 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/sitemap', function () {
+    return Inertia::render('Sitemap', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 Route::get('/terms-and-conditions', function () {
     return Inertia::render('Footer/Terms', [
         'canLogin' => Route::has('login'),
@@ -101,9 +110,8 @@ Route::resource('items', ItemController::class)
     ->middleware(['auth', 'verified']);
 
 Route::get('/', function() {
-    //return Item::paginate(5);
         return Inertia::render('Items/Home', [
-              'items' => Item::paginate(5)
+              'items' => Item::all()
         ]);
 });
 

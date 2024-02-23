@@ -8,14 +8,6 @@ defineProps({
     canRegister: {
         type: Boolean,
     },
-    laravelVersion: {
-        type: String,
-        required: true,
-    },
-    phpVersion: {
-        type: String,
-        required: true,
-    },
 });
 </script>
 
@@ -89,7 +81,7 @@ defineProps({
           <a
             class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
             href="/contact"
-            >Contact us</a
+            >Contact</a
           >
 
           <Link v-if="$page.props.auth.user"
@@ -97,18 +89,6 @@ defineProps({
             href="/register"
             >Dashboard</Link>
 
-        <template v-else>
-          <Link
-            class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-            href="/login"
-            >Log In</Link
-          >
-          <Link
-            class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-            href="/register"
-            >Register</Link
-          >
-        </template>
         </div>
       </div>
     </nav>
