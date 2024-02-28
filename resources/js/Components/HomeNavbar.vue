@@ -1,5 +1,6 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
+import Title from '../Pages/Items/Title.vue';
 
 defineProps({
     canLogin: {
@@ -24,7 +25,7 @@ defineProps({
           class="flex-none text-xl font-semibold dark:text-white"
           href="/"
           aria-label="Brand"
-          >Andorra Connect</a
+          ><Title height="35px" width="35px"></Title></a
         >
         <div class="sm:hidden">
           <button
@@ -86,7 +87,7 @@ defineProps({
 
           <Link v-if="$page.props.auth.user"
             class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-            href="/register"
+            href="/dashboard"
             >Dashboard</Link>
 
         </div>
