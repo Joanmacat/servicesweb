@@ -5,7 +5,7 @@ import Home from "./Items/Home.vue";
 </script>
 
 <template>
-    <Head title="Services web project 0.0.1" />
+    <Head title="Andorra Connect - Find the services you are looking for!" />
     <Home></Home>
 </template>
 

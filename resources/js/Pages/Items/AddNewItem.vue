@@ -69,8 +69,8 @@ const addNewItem = () => {
 
           <div class="mb-4 sm:mb-8">
             <label
-              for="hs-feedback-post-category-1"
               class="block mb-2 text-sm font-medium dark:text-white"
+              for="categories"
               >Category</label
             >
             <select name="category" placeholder="Select category" id="categories" v-model="form.category_name">
@@ -115,13 +115,13 @@ const addNewItem = () => {
 
           <div class="mb-4 sm:mb-8">
             <label
-              for="hs-feedback-post-image-url-1"
+              for="hs-feedback-post-image-input"
               class="block mb-2 text-sm font-medium dark:text-white"
               >Image URL</label
             >
             <input
               type="url"
-              id="hs-feedback-post-image-url-1"
+              id="hs-feedback-post-image-input"
               class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="https://www.example.com/image.jpg"
               v-model="form.image_url"
@@ -131,13 +131,13 @@ const addNewItem = () => {
 
           <div class="mb-4 sm:mb-8">
             <label
-              for="hs-feedback-post-image-url-1"
+              for="hs-feedback-post-map-input"
               class="block mb-2 text-sm font-medium dark:text-white"
               >Map</label
             >
             <input
               type="map"
-              id="hs-feedback-post-image-url-1"
+              id="hs-feedback-post-map-input"
               class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="Google Maps, Bing, etc."
               v-model="form.map"

@@ -42,7 +42,7 @@ const hashtagToSearchInput = (value) => {
   <HomeNavbar></HomeNavbar>
   <!-- CONTAINER-->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <Title></Title>
+    <Title width="200px" height="200px" title="Andorra Connect" subtitle="Find the services you are looking for!"></Title>
     <!-- Form -->
     <form>
       <div
