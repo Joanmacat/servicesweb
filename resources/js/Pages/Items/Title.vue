@@ -11,7 +11,7 @@ defineProps({
     <!-- Card Blog -->
     <!-- Title -->
 
-    <div class="card-blog max-w-2xl mx-auto">
+    <div class="card-blog max-w-2xl mx-auto mt-4">
      <svg :height="height" :width="width" version="1.1" id="_x35_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
     	 viewBox="0 0 512 512"  xml:space="preserve">
     <g>

@@ -1,4 +1,5 @@
 <script setup>
+
 import { ref, computed } from 'vue';
 import { Head, useForm } from '@inertiajs/vue3';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
@@ -38,6 +39,16 @@ const filteredItems = computed(() => {
     );
 });
 
+const showAddItemModal = ref(false);
+
+const showAddNewItem = () => {
+    showAddItemModal.value = true;
+}
+
+const closeAddNewItem = () => {
+    showAddItemModal = false;
+}
+
 </script>
 
 <template>
@@ -50,11 +61,11 @@ const filteredItems = computed(() => {
                 <div class="py-3 px-4">
                 <div class="relative max-w-xs">
                     <label class="sr-only" for="hs-table-with-pagination-search">Search</label>
-                    <input v-model="searchTerm" type="text" name="hs-table-with-pagination-search" id="hs-table-with-pagination-search" class="py-2 px-3 ps-9 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Search for items">
+                    <input v-model="searchTerm" type="text" name="hs-table-with-pagination-search" id="hs-table-with-pagination-search" class="py-2 px-3 ps-9 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-teal-500 focus:ring-teal-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Search for items">
                     <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-3">
                         <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                     </div>
-                    <button type="button" class="absolute inset-y-0 end-0 px-3 flex items-center bg-blue-500 text-white rounded-r-lg hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300" data-hs-overlay="#additem">Add new item</button>
+                    <button id="addnewitem" type="button" class="absolute inset-y-0 end-0 px-3 flex items-center bg-teal-500 text-white rounded-r-lg hover:bg-teal-700 focus:outline-none focus:ring focus:border-teal-300" data-hs-overlay="#additem">Add new item</button>
                 </div>
                 </div>
                 <div class="overflow-hidden">
@@ -89,6 +100,6 @@ const filteredItems = computed(() => {
             </div>
         </div>
         </div>
-        <AddNewItem></AddNewItem>
+        <AddNewItem v-if="showAddNewItem" @close="closeAddNewItem"></AddNewItem>
         </AuthenticatedLayout>
 </template>

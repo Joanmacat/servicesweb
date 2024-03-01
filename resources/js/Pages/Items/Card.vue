@@ -22,7 +22,7 @@ const props = defineProps({
     </div>
     <div class="p-4 md:p-6">
       <span
-        class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500"
+        class="block mb-1 text-xs font-semibold uppercase text-teal-600 dark:text-teal-500"
       >
         {{ props.category }}
       </span>
@@ -46,7 +46,7 @@ const props = defineProps({
         Website
       </a>
       <a
-        class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-teal-500 text-white shadow-sm hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
         :href="map"
         target="_blank"
       >

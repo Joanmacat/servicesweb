@@ -61,7 +61,7 @@ const updateItem = (id) => {
             <input
               type="text"
               id="hs-feedback-post-comment-name-1"
-              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="Enter company name"
               v-model="form.company_name"
               required
@@ -91,7 +91,7 @@ const updateItem = (id) => {
             <input
               type="text"
               id="hs-feedback-post-location-1"
-              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="Washington D.C"
               v-model="form.location"
               required
@@ -107,7 +107,7 @@ const updateItem = (id) => {
             <input
               type="url"
               id="hs-feedback-post-url-1"
-              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="https://www.example.com"
               v-model="form.url"
               required
@@ -123,7 +123,7 @@ const updateItem = (id) => {
             <input
               type="url"
               id="hs-feedback-update-post-image-input"
-              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="https://www.example.com/image.jpg"
               v-model="form.image_url"
               required
@@ -139,7 +139,7 @@ const updateItem = (id) => {
             <input
               type="map"
               id="hs-feedback-update-post-map"
-              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+              class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
               placeholder="Google maps, Bing, etc."
               v-model="form.map"
               required
@@ -157,7 +157,7 @@ const updateItem = (id) => {
                 id="hs-feedback-post-comment-textarea-1"
                 name="hs-feedback-post-comment-textarea-1"
                 rows="3"
-                class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
                 placeholder="Describe briefly your activity"
                 v-model="form.description"
                 required
@@ -168,7 +168,7 @@ const updateItem = (id) => {
           <div class="mt-6 grid space-y-3">
             <input
               type="submit"
-              class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+              class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-teal-500 text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
               value="Update"
               required
             />

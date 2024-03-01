@@ -11,7 +11,7 @@ import Footer from './Footer.vue';
         <h2
           class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
         >
-          About Andorra Services
+          About
         </h2>
         <p class="mt-1 text-gray-600 dark:text-gray-400">
           Answers to the most frequently asked questions.
@@ -23,7 +23,7 @@ import Footer from './Footer.vue';
         <!-- Accordion -->
         <div class="hs-accordion-group">
           <div
-            class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05] active"
+            class="hs-accordion hs-accordion-active:bg-teal-500 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05] active"
             id="hs-basic-with-title-and-arrow-stretched-heading-one"
           >
             <button
@@ -47,7 +47,7 @@ import Footer from './Footer.vue';
                 />
               </svg>
               <svg
-                class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-teal-500 dark:text-gray-400"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -75,7 +75,7 @@ import Footer from './Footer.vue';
           </div>
   
           <div
-            class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+            class="hs-accordion hs-accordion-active:bg-teal-500 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
             id="hs-basic-with-title-and-arrow-stretched-heading-two"
           >
             <button
@@ -120,13 +120,13 @@ import Footer from './Footer.vue';
               aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
             >
               <p class="text-gray-800 dark:text-gray-200">
-                We would like to clarify that Serveisweb.ad is not affiliated with any government entity, nor have we received any funding or financial support from public entities. 
+                We would like to clarify that <a href="#">andorraconnect.com</a> is not affiliated with any government entity, nor have we received any funding or financial support from public entities. 
               </p>
             </div>
           </div>
   
           <div
-            class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+            class="hs-accordion hs-accordion-active:bg-teal-500 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
             id="hs-basic-with-title-and-arrow-stretched-heading-three"
           >
             <button
@@ -172,13 +172,13 @@ import Footer from './Footer.vue';
             >
               <p class="text-gray-800 dark:text-gray-200">
                 We prioritize the privacy and security of our users. We want to assure you that we do not store any sensitive information from any customer. We understand the importance of safeguarding personal data and adhere to strict data protection practices. 
-                For detailed information regarding our data collection, storage, and usage policies, we encourage you to refer to our Terms and Conditions. 
+                For detailed information regarding our data collection, storage, and usage policies, we encourage you to refer to our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/privacy">Privacy policy</a>
               </p>
             </div>
           </div>
   
           <div
-            class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+            class="hs-accordion hs-accordion-active:bg-teal-500 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
             id="hs-basic-with-title-and-arrow-stretched-heading-four"
           >
             <button
@@ -229,7 +229,7 @@ import Footer from './Footer.vue';
           </div>
   
           <div
-            class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+            class="hs-accordion hs-accordion-active:bg-teal-500 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
             id="hs-basic-with-title-and-arrow-stretched-heading-five"
           >
             <button
