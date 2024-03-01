@@ -24,12 +24,13 @@ import Footer from '../Components/Footer.vue';
       <!-- End Title -->
       <p class="mt-1 text-gray-600 dark:text-gray-400 text-2xl font-bold">Pages</p>
       <ul class="mt-4">
-        <li><a href="/" class="text-blue-500 hover:underline">· Home</a></li>
-        <li><a href="/about" class="text-blue-500 hover:underline">· About</a></li>
-        <li><a href="/contact" class="text-blue-500 hover:underline">· Contact</a></li>
-        <li><a href="/cookies" class="text-blue-500 hover:underline">· Cookies</a></li>
-        <li><a href="/terms-and-conditions" class="text-blue-500 hover:underline">· Terms and Conditions</a></li>
-        <li><a href="/privacy" class="text-blue-500 hover:underline">· Privacy</a></li>
+        <li><a href="/" class="text-teal-500 hover:text-teal-700">- Home</a></li>
+        <li><a href="/about" class="text-teal-500 hover:text-teal-700">- About</a></li>
+        <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
+        <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>
+        <li><a href="/sitemap" class="text-teal-500 hover:text-teal-700">- Sitemap</a></li>
+        <li><a href="/terms-and-conditions" class="text-teal-500 hover:text-teal-700">- Terms and Conditions</a></li>
+        <li><a href="/privacy" class="text-teal-500 hover:text-teal-700">- Privacy</a></li>
       </ul>
     </div>
     <Footer></Footer>

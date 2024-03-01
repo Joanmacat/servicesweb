@@ -66,7 +66,7 @@ const submit = () => {
                     name="name"
                     id="name"
                     v-model="form.name"
-                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                   />
                 </div>
   
@@ -81,7 +81,7 @@ const submit = () => {
                     name="lastName"
                     id="lastName"
                     v-model="form.lastName"
-                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                   />
                 </div>
               </div>
@@ -101,7 +101,7 @@ const submit = () => {
                     id="email"
                     v-model="form.email"
                     autocomplete="email"
-                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                   />
                 </div>
   
@@ -116,7 +116,7 @@ const submit = () => {
                     name="phone"
                     id="phone"
                     v-model="form.phone"
-                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                   />
                 </div>
               </div>
@@ -133,19 +133,19 @@ const submit = () => {
                   v-model="form.message"
                   name="message"
                   rows="4"
-                  class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                  class="border py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                 ></textarea>
               </div>
             </div>
             <!-- End Grid -->
             <div class="flex mt-6">
-              <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox" required>
-              <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-gray-400">I have read and accepted the <a href="/terms-and-conditions">Terms and Conditions</a>, along with the <a href="/privacy">Privacy Policy</a>.</label>
+              <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-teal-600 focus:ring-teal-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-teal-500 dark:checked:border-teal-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox" required>
+              <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-gray-400">I have read and accepted the <a class="hover:text-teal-500" href="/terms-and-conditions">Terms and Conditions</a>, along with the <a class="hover:text-teal-500" href="/privacy">Privacy Policy</a>.</label>
             </div>
             <div class="mt-6 grid">
               <button
                 type="submit"
-                class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                class="inline-flex justify-center items-center gap-x-3 text-center bg-teal-500 hover:bg-teal-400 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
               >
                 Send inquiry
               </button>

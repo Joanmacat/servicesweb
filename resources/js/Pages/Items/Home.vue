@@ -59,13 +59,13 @@ const hashtagToSearchInput = (value) => {
             v-model="searchInput"
             name="hs-search-article-1"
             id="hs-search-article-1"
-            class="p-3 block w-full border-transparent rounded-md focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-400"
+            class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
             placeholder="Search your service"
           />
         </div>
         <div class="flex-[0_0_auto]">
           <a
-            class="p-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+            class="p-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-teal-600 text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
             href="#"
           >
             <svg
@@ -84,7 +84,7 @@ const hashtagToSearchInput = (value) => {
       </div>
     </form>
     <br />
-    <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+    <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
       <a href="#card-grid">#{{ item }}</a>
     </button>
     <!-- GRID -->
@@ -117,16 +117,7 @@ const hashtagToSearchInput = (value) => {
        ></Card>
       <!-- END GRID -->
     </div>
-    <!-- END CONTAINER -->
-      <!-- Pagination -->
-      <div class="flex items-center justify-between border-gray-200 bg-white px-4 py-3 sm:px-6">
-  <div class="flex flex-1 justify-between sm:hidden">
-    <a href="#" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
-    <a href="#" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
-  </div>
-</div>
-<Footer></Footer>
-  <!-- End Pagination -->
+    <Footer></Footer>
   </div>
 </template>
 <style>
