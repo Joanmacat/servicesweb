@@ -39,21 +39,12 @@ const filteredItems = computed(() => {
     );
 });
 
-const showAddItemModal = ref(false);
-
-const showAddNewItem = () => {
-    showAddItemModal.value = true;
-}
-
-const closeAddNewItem = () => {
-    showAddItemModal = false;
-}
-
 </script>
 
 <template>
     <Head title="items" />
     <AuthenticatedLayout>
+    <AddNewItem></AddNewItem>
     <div class="p-12 flex flex-col bg-white">
         <div class="-m-1.5 overflow-x-auto">
             <div class="p-1.5 min-w-full inline-block align-middle">
@@ -100,6 +91,5 @@ const closeAddNewItem = () => {
             </div>
         </div>
         </div>
-        <AddNewItem v-if="showAddNewItem" @close="closeAddNewItem"></AddNewItem>
         </AuthenticatedLayout>
 </template>
