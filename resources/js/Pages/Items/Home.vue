@@ -1,7 +1,7 @@
 <script setup>
 import Card from "./Card.vue";
 import Title from "./Title.vue";
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import Footer from '../../Components/Footer.vue';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 
@@ -10,6 +10,22 @@ let searchInput = ref("");
 const props = defineProps({
     items: Array
   })
+
+const displayedItems = ref([]); // Array de elementos que se mostrarán
+const showMore = ref(false); // Estado de "Load more"
+
+const loadMore = () => {
+  // Añadir los siguientes cinco elementos a displayedItems
+  const startIndex = displayedItems.value.length;
+  const endIndex = startIndex + 6;
+  displayedItems.value = props.items.slice(0, endIndex);
+  showMore.value = true; // Mostrar elementos adicionales
+};
+
+onMounted(() => {
+  // Inicialmente cargar los primeros cinco elementos
+  displayedItems.value = props.items.slice(0, 6);
+});
 
 let categoryList = [...new Set(props.items.map(item => item.category_name))];
 
@@ -66,18 +82,17 @@ const hashtagToSearchInput = (value) => {
         <div class="flex-[0_0_auto]">
           <a
             class="p-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-teal-600 text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
-            href="#"
+            href="/"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              viewBox="0 0 16 16"
+              viewBox="0 0 24 24"
             >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-              />
+              <path d="M22.719 12A10.719 10.719 0 1 1 1.28 12h.838a9.916 9.916 0 1 0 1.373-5H8v1H2V2h1v4.2A10.71 10.71 0 0 1 22.719 12z"/>
+              <path fill="none" d="M0 0h24v24H0z"/>
             </svg>
           </a>
         </div>
@@ -92,9 +107,8 @@ const hashtagToSearchInput = (value) => {
 
       <!-- Regular card -->  
       <Card
-          v-for="item in items"
+          v-for="(item, index) in displayedItems"
           v-show="searchInput == ''"
-          class="card-hidden"
           :title="item.company_name"
           :description="item.description"
           :category="item.category_name"
@@ -105,7 +119,6 @@ const hashtagToSearchInput = (value) => {
       <!-- Filtered card -->
       <Card
          id="card"
-         class="card-hidden"
          v-for="item in filterServices"
          v-show="searchInput !== ''"
          :title="item.company_name"
@@ -117,12 +130,15 @@ const hashtagToSearchInput = (value) => {
        ></Card>
       <!-- END GRID -->
     </div>
+    <div class="py-8">
+      <button v-if="!showMore && items.length > 6" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Load more</button>
+    </div>
     <Footer></Footer>
   </div>
 </template>
+
 <style>
   html {
     scroll-behavior: smooth;
   }
-
 </style>
