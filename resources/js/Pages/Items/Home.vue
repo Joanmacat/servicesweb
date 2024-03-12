@@ -1,7 +1,7 @@
 <script setup>
 import Card from "./Card.vue";
 import Title from "./Title.vue";
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import Footer from '../../Components/Footer.vue';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 
@@ -81,7 +81,7 @@ const hashtagToSearchInput = (value) => {
         </div>
         <div class="flex-[0_0_auto]">
           <a
-            class="p-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-teal-600 text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+            class="p-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-teal-500 text-white hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
             href="/"
           >
             <svg
