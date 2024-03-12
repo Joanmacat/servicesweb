@@ -17,14 +17,14 @@ const showMore = ref(false); // Estado de "Load more"
 const loadMore = () => {
   // Añadir los siguientes cinco elementos a displayedItems
   const startIndex = displayedItems.value.length;
-  const endIndex = startIndex + 6;
+  const endIndex = startIndex + 10;
   displayedItems.value = props.items.slice(0, endIndex);
   showMore.value = true; // Mostrar elementos adicionales
 };
 
 onMounted(() => {
   // Inicialmente cargar los primeros cinco elementos
-  displayedItems.value = props.items.slice(0, 6);
+  displayedItems.value = props.items.slice(0, 10);
 });
 
 let categoryList = [...new Set(props.items.map(item => item.category_name))];
