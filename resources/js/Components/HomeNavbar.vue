@@ -87,7 +87,7 @@ defineProps({
 
           <Link v-if="$page.props.auth.user"
             class="font-medium text-teal-600 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-            href="/dashboard"
+            href="/items"
             >Dashboard</Link>
 
         </div>
