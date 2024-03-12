@@ -45,10 +45,15 @@ const deleteItem = (id) => {
     }
 }
 
-// Update - Edit item.
-const updateItem = (id) => {
-    itemId.value = id
-    return itemId
+const submitUpdateItem = (id) => {
+  try {
+    if(confirm("Do you really want to update the item?")) {
+      form.patch(route('items.update', id));
+      toast.warn("Item updated successfully")
+    }
+  } catch (error) {
+    toast.error("Something went wrong: ", error);
+  }
 }
 
 // Función para filtrar los elementos según el término de búsqueda
@@ -63,12 +68,35 @@ const filteredItems = computed(() => {
 });
 
 const isModalOpen = ref(false);
+const isUpdateModalOpen = ref(false);
+
 const openModal = () => {
   isModalOpen.value = true;
 };
 
 const closeModal = () => {
   isModalOpen.value = false;
+};
+
+const openUpdateModal = (id) => {
+  isUpdateModalOpen.value = true;
+  itemId.value = id
+  return itemId
+};
+
+const updateItem = () => {
+  try {
+    if(confirm("Do you really want to update the item?")) {
+      form.patch(route('items.update', itemId.value));
+      toast.warn("Item updated successfully")
+    } 
+  } catch (error) {
+    toast.error("Something went wrong: ", error)
+  }
+}
+
+const closeUpdateModal = () => {
+  isUpdateModalOpen.value = false;
 };
 
 </script>
@@ -227,6 +255,151 @@ const closeModal = () => {
     </div>
     <!-- ADD NEW ITEM MODAL -->
 
+    <!-- UPDATE ITEM MODAL-->
+    <div v-if="isUpdateModalOpen" class="modal-backdrop" >
+      <div class="w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto">
+        <div class="mx-auto max-w-2xl sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+          <div class="mt-5 p-4 relative z-10 bg-white border rounded-xl sm:mt-10 md:p-10 dark:bg-gray-800 dark:border-gray-700 max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="absolute top-2 end-2 mx-auto max-w-2xl">
+            <button type="button" @click="closeUpdateModal" class="flex justify-center items-center w-7 h-7 text-sm font-semibold rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-transparent dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-overlay="#additem">
+              <span class="sr-only">Close</span>
+              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+          </div>
+            <div class="text-center">
+              <h2 class="text-xl text-gray-800 font-bold sm:text-3xl dark:text-white mb-8">
+                Update item
+              </h2>
+            </div>
+            <form @submit.prevent="updateItem()">
+              <div class="mb-4 sm:mb-8">
+                <label
+                  for="hs-feedback-post-comment-name-1"
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  >Company name</label
+                >
+                <input
+                  type="text"
+                  id="hs-feedback-post-comment-name-1"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                  placeholder="Enter company name"
+                  v-model="form.company_name"
+                  required
+                />
+              </div>
+
+              <div class="mb-4 sm:mb-8">
+                <label
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  for="categories"
+                  >Category</label
+                >
+                <select name="category" placeholder="Select category" id="categories" v-model="form.category_name">
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="Accountant">Accountant</option>
+                  <option value="Assessment">Assessment</option>
+                  <option value="Advocacy">Advocacy</option>
+                </select>
+              </div>
+
+              <div class="mb-4 sm:mb-8">
+                <label
+                  for="hs-feedback-post-location-1"
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  >Location</label
+                >
+                <input
+                  type="text"
+                  id="hs-feedback-post-location-1"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                  placeholder="Washington D.C"
+                  v-model="form.location"
+                  required
+                />
+              </div>
+
+              <div class="mb-4 sm:mb-8">
+                <label
+                  for="hs-feedback-post-url-1"
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  >URL</label
+                >
+                <input
+                  type="url"
+                  id="hs-feedback-post-url-1"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                  placeholder="https://www.example.com"
+                  v-model="form.url"
+                  required
+                />
+              </div>
+
+              <div class="mb-4 sm:mb-8">
+                <label
+                  for="hs-feedback-post-image-input"
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  >Image URL</label
+                >
+                <input
+                  type="url"
+                  id="hs-feedback-post-image-input"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                  placeholder="https://www.example.com/image.jpg"
+                  v-model="form.image_url"
+                  required
+                />
+              </div>
+
+              <div class="mb-4 sm:mb-8">
+                <label
+                  for="hs-feedback-post-map-input"
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  >Map</label
+                >
+                <input
+                  type="url"
+                  id="hs-feedback-post-map-input"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                  placeholder="Google Maps, Bing, etc."
+                  v-model="form.map"
+                  required
+                />
+              </div>
+
+              <div>
+                <label
+                  for="hs-feedback-post-comment-textarea-1"
+                  class="block mb-2 text-sm font-medium dark:text-white"
+                  >Description</label
+                >
+                <div class="mt-1">
+                  <textarea
+                    id="hs-feedback-post-comment-textarea-1"
+                    name="hs-feedback-post-comment-textarea-1"
+                    rows="3"
+                    class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                    placeholder="Describe briefly your activity"
+                    v-model="form.description"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="mt-6 grid space-y-3">
+                <input
+                  type="submit"
+                  class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-teal-500 text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800"
+                  value="Submit"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- UPDATE ITEM MODAL END-->
+
     <!-- INDEX CONTENT -->
     <div class="p-12 flex flex-col bg-white">
         <div class="-m-1.5 overflow-x-auto">
@@ -254,7 +427,7 @@ const closeModal = () => {
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200"><a :href="item.url" target="_blank">See URL</a></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200"><a :href="item.map" target="_blank">See Map</a></td>
                         <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                        <button type="button" @click="updateItem(item.id)" data-hs-overlay="#updateitem" class="mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-100 text-yellow-800 hover:bg-yellow-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-yellow-900 dark:text-yellow-500 dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Edit</button>
+                        <button type="button" @click="openUpdateModal(item.id)" class="mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-100 text-yellow-800 hover:bg-yellow-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-yellow-900 dark:text-yellow-500 dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Edit</button>
                         <button type="button" @click="deleteItem(item.id)" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-100 text-red-800 hover:bg-red-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-red-900 dark:text-red-500 dark:hover:text-red-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Delete</button>
                         </td>
                         <UpdateItem :id="itemId"></UpdateItem>
