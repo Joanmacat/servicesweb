@@ -121,6 +121,12 @@ Route::get('/stats', function() {
         ]);
 });
 
+Route::get('/stats', function() {
+        return Inertia::render('Items/Stats', [
+              'items' => Item::all()
+        ]);
+});
+
 Route::delete('items/{item}', [ItemController::class, 'destroy'])->name('items.destroy');
 Route::patch('items/{item}', [ItemController::class, 'update'])->name('items.update');
 
