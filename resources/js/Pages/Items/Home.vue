@@ -13,18 +13,25 @@ const props = defineProps({
 
 const displayedItems = ref([]); // Array de elementos que se mostrarán
 const showMore = ref(false); // Estado de "Load more"
+let showMoreButtonText = 'Load more';
 
 const loadMore = () => {
   // Añadir los siguientes cinco elementos a displayedItems
   const startIndex = displayedItems.value.length;
-  const endIndex = startIndex + 10;
+  const endIndex = startIndex + 6;
   displayedItems.value = props.items.slice(0, endIndex);
-  showMore.value = true; // Mostrar elementos adicionales
+  showMore.value = false; // Mostrar elementos adicionales
+
+  if(displayedItems.value.length < props.items.length) {
+    showMoreButtonText = 'Load more'
+  } else {
+    showMoreButtonText = 'End of list ;_;'
+  }
 };
 
 onMounted(() => {
   // Inicialmente cargar los primeros cinco elementos
-  displayedItems.value = props.items.slice(0, 10);
+  displayedItems.value = props.items.slice(0, 6);
 });
 
 let categoryList = [...new Set(props.items.map(item => item.category_name))];
@@ -131,7 +138,7 @@ const hashtagToSearchInput = (value) => {
       <!-- END GRID -->
     </div>
     <div class="py-8">
-      <button v-if="!showMore && items.length > 6" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Load more</button>
+      <button v-if="!showMore && items.length > 6" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">{{ showMoreButtonText }}</button>
     </div>
     <Footer></Footer>
   </div>
