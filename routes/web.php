@@ -111,7 +111,13 @@ Route::resource('items', ItemController::class)
 
 Route::get('/', function() {
         return Inertia::render('Items/Home', [
-              'items' => Item::all()
+              'items' => Item::all(),
+        ]);
+});
+
+Route::get('/stats', function() {
+        return Inertia::render('Items/Stats', [
+              'items' => Item::all(),
         ]);
 });
 
