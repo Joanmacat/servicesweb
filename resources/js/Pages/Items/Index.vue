@@ -152,8 +152,11 @@ const closeUpdateModal = () => {
                 <select name="category" placeholder="Select category" id="categories" v-model="form.category_name">
                   <option value="" disabled selected>Select a category</option>
                   <option value="Accountant">Accountant</option>
-                  <option value="Assessment">Assessment</option>
                   <option value="Advocacy">Advocacy</option>
+                  <option value="Banking">Banking</option>
+                  <option value="Consultancy">Consultancy</option>
+                  <option value="Concierge">Concierge</option>
+                  <option value="Family Office">Family Office</option>
                 </select>
               </div>
 
@@ -209,7 +212,7 @@ const closeUpdateModal = () => {
                 <label
                   for="hs-feedback-post-map-input"
                   class="block mb-2 text-sm font-medium dark:text-white"
-                  >Map</label
+                  >Map / Contact</label
                 >
                 <input
                   type="url"
@@ -297,8 +300,11 @@ const closeUpdateModal = () => {
                 <select name="category" placeholder="Select category" id="categories" v-model="form.category_name">
                   <option value="" disabled selected>Select a category</option>
                   <option value="Accountant">Accountant</option>
-                  <option value="Assessment">Assessment</option>
                   <option value="Advocacy">Advocacy</option>
+                  <option value="Banking">Banking</option>
+                  <option value="Consultancy">Consultancy</option>
+                  <option value="Concierge">Concierge</option>
+                  <option value="Family Office">Family Office</option>
                 </select>
               </div>
 

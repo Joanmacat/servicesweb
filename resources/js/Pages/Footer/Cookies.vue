@@ -19,7 +19,7 @@ import Footer from '../../Components/Footer.vue';
     <div class="md:max-w-screen-sm lg:max-w-[992px] px-4 sm:px-6 lg:px-8 pb-12 md:pt-6 sm:pb-20 mx-auto">
       <div class="grid gap-4 md:gap-8">
         <div>
-          <p class="mb-5 dark:text-gray-400">Lausengier, SL (hereinafter, Lausengier) uses cookies on the website Lausengier.fr
+          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT (hereinafter, ANDORRACONNECT) uses cookies on the website ANDORRACONNECT.fr
 (hereinafter, the website) to help improve the service of the user of the website
 (hereinafter, the User) by measuring usage and performance of the website as well as to
 optimize and personalize it. Cookies are files sent to a browser through a web server to
@@ -35,11 +35,11 @@ information for the indicated purpose, without prejudice to their right to rejec
 use of cookies.</p>
 <p class="mb-5 dark:text-gray-400">Likewise, the website will be able to know all the services requested by Users, so that they will
 be able to facilitate or offer information appropriate to the tastes and preferences of each
-User. It is possible that the website contains links to other websites, in this sense Lausengier
+User. It is possible that the website contains links to other websites, in this sense ANDORRACONNECT
 does not control the cookies used by these external websites. For more information about
 cookies on third-party websites, we recommend reviewing their own cookie policies. Current
 legislation requires us to request the User's consent to be able to manage cookies. If the User
-decides not to authorize its use, Lausengier would not store any cookies and only technical
+decides not to authorize its use, ANDORRACONNECT would not store any cookies and only technical
 cookies would be used since without them it is not possible to browse the website. If you
 continue browsing the website and do not deny authorization, said activity will imply
 acceptance of its use.</p>
@@ -68,13 +68,13 @@ while browsing our site. We use this
 information to improve the user
 experience in future updates.</p>
 
-<p class="mb-5 dark:text-gray-400">The User can restrict, block or delete cookies from the Lausengier website using their
+<p class="mb-5 dark:text-gray-400">The User can restrict, block or delete cookies from the ANDORRACONNECT website using their
 browser. In each browser the operation is different, below are the links to the main
 browsers on how to make these modifications: <strong>Internet Explorer, FireFox, Chrome and Safari.</strong></p>
 
-<p class="mb-5 dark:text-gray-400">In the event of making changes to the cookie configuration, Lausengier informs that it
+<p class="mb-5 dark:text-gray-400">In the event of making changes to the cookie configuration, ANDORRACONNECT informs that it
 does not ensure the correct functioning of the different functionalities of the website.
-Lausengier may modify this Cookies Policy based on legislative and regulatory
+ANDORRACONNECT may modify this Cookies Policy based on legislative and regulatory
 requirements, or with the purpose of adapting said Policy to the instructions issued by
 the Spanish Data Protection Agency, therefore Users of the website are advised to modify
 it. visit periodically.</p>

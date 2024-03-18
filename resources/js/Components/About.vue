@@ -27,7 +27,7 @@ import Footer from './Footer.vue';
             id="hs-basic-with-title-and-arrow-stretched-heading-one"
           >
             <button
-              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition dark:text-gray-200 dark:hover:text-gray-400"
               aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
             >
               Who we are and what we do?
@@ -79,7 +79,7 @@ import Footer from './Footer.vue';
             id="hs-basic-with-title-and-arrow-stretched-heading-two"
           >
             <button
-              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition dark:text-gray-200 dark:hover:text-gray-400"
               aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
             >
               Who we aren't?
@@ -130,7 +130,7 @@ import Footer from './Footer.vue';
             id="hs-basic-with-title-and-arrow-stretched-heading-three"
           >
             <button
-              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition dark:text-gray-200 dark:hover:text-gray-400"
               aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
             >
               What we don't do?
@@ -182,7 +182,7 @@ import Footer from './Footer.vue';
             id="hs-basic-with-title-and-arrow-stretched-heading-four"
           >
             <button
-              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition dark:text-gray-200 dark:hover:text-gray-400"
               aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
             >
               About advertisement
@@ -233,7 +233,7 @@ import Footer from './Footer.vue';
             id="hs-basic-with-title-and-arrow-stretched-heading-five"
           >
             <button
-              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+              class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition dark:text-gray-200 dark:hover:text-gray-400"
               aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five"
             >
               Contact us!
