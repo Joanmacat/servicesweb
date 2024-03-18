@@ -22,8 +22,8 @@ import Footer from '../../Components/Footer.vue';
           <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">General Terms</h2>
 
           <p class="mb-5 dark:text-gray-400">These General Conditions of use and contracting (hereinafter, Conditions) regulate the use and
-access to the Lausengier.fr website (hereinafter, the Platform), owned by LAUSENGIER, SL
-(hereinafter, Lausengier) for users of the Platform. (hereinafter, User or Users) as well as the
+access to the andorraconnect.com website (hereinafter, the Platform), owned by ANDORRACONNECT.COM
+(hereinafter, ANDORRACONNECT) for users of the Platform. (hereinafter, User or Users) as well as the
 contractual relationship of purchase and sale during the purchase process of products offered
 from the Platform.</p>
 
@@ -46,10 +46,10 @@ data is requested (Username and email).</li>
 address. This message will contain your email address (user ID) and your password so
 that you can connect to the Platform.</p>
           <p class="mb-5 dark:text-gray-400">The User guarantees that all data regarding their identity and legitimacy provided to
-Lausengier in their Platform registration forms are true, accurate and complete. You also
+ANDORRACONNECT in their Platform registration forms are true, accurate and complete. You also
 undertake to keep your data updated. In the event that the User provides any false,
-inaccurate or incomplete data or if Lausengier considers that there are justified reasons to
-doubt the veracity, accuracy and integrity of the same, Lausengier may deny access and
+inaccurate or incomplete data or if ANDORRACONNECT considers that there are justified reasons to
+doubt the veracity, accuracy and integrity of the same, ANDORRACONNECT may deny access and
 present or future use of the Platform or of any of its contents and/or services.</p>
           <p class="mb-5 dark:text-gray-400">When registering on the Platform, the User must enter their full name, an email as a user
 identifier and select an access code (password). The password will be strictly confidential,
@@ -57,17 +57,17 @@ personal and non-transferable. The User agrees not to disclose the data related 
 account or make it accessible to third parties. The User will be solely responsible in the event
 of use of said data by third parties, including the statements made on the Platform, or any
 other action carried out through the use of their username and/or password.</p>
-<p class="dark:text-gray-400">Lausengier allows registration on the Platform through synchronization with third-party services (e.g.
-Log-In with a Facebook account). Lausengier will always request the User's consent prior to
-registration for the synchronization of services between a third party and Lausengier.</p>
+<p class="dark:text-gray-400">ANDORRACONNECT allows registration on the Platform through synchronization with third-party services (e.g.
+Log-In with a Facebook account). ANDORRACONNECT will always request the User's consent prior to
+registration for the synchronization of services between a third party and ANDORRACONNECT.</p>
         </div>
 
         <div>
           <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">User</h2>
 
           <p class="dark:text-gray-400">The User has the possibility of adding services by publishing them on the Platform. To do
-this, he must contact Lausengier through the form in the “Contact” section of the Platform, and send the necessary information so that it is previously reviewed and approved by
-Lausengier.</p>
+this, he must contact ANDORRACONNECT through the form in the “Contact” section of the Platform, and send the necessary information so that it is previously reviewed and approved by
+ANDORRACONNECT.</p>
         </div>
 
         <div>
@@ -75,7 +75,7 @@ Lausengier.</p>
 
           <p class="mb-5 dark:text-gray-400">The User is responsible for having the services and equipment necessary for browsing the
 Internet and accessing the Platform. In the event of any incident or difficulty in accessing the
-Platform, the User can inform Lausengier, which will proceed to analyze the incident and give
+Platform, the User can inform ANDORRACONNECT, which will proceed to analyze the incident and give
 instructions to the User on how to resolve it in the shortest possible time.</p>
           <p class="mb-5 dark:text-gray-400">The User is completely responsible for the access and correct use of the Platform and its
 contents and services subject to current legislation, whether national or international, as
@@ -85,13 +85,13 @@ specifically, he undertakes to diligently observe these Conditions.</p>
 rights and interests of third parties, or that in any way may damage, disable, affect or deteriorate
 the Platform, its contents and its services. Likewise, it is prohibited to prevent the normal use or
 enjoyment of the Platform by other Users.</p>
-          <p class="mb-5 dark:text-gray-400">Lausengier cannot be considered editorially responsible, and expressly declares that it
+          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT cannot be considered editorially responsible, and expressly declares that it
 does not identify with any of the opinions that the Users of the Platform may express,
 especially with all those opinions expressed by the Users with respect to the
 characteristics and qualities of the products offered from the Platform, for the
 consequences of which the issuer is entirely responsible.</p>
           <p class="mb-5 dark:text-gray-400">Those who fail to comply with such obligations will be liable for any loss or damage they
-cause. Lausengier will not be liable for any consequence, damage or harm that may arise
+cause. ANDORRACONNECT will not be liable for any consequence, damage or harm that may arise
 from said access or illicit use by third parties.</p>
 <p class="mb-5 dark:text-gray-400">In general, the User undertakes, by way of example and not limitation, to:</p>
     <ul>
@@ -110,46 +110,46 @@ the protection of personal data.</li>
 <li class="dark:text-gray-400">- Not use the Platform to insult, defame, intimidate, violate one's own image or harass
 other Users.</li>
 <li class="dark:text-gray-400">- Do not introduce computer viruses, defective files, or any other computer program
-that may cause damage or alterations to the contents or systems of Lausengier or
+that may cause damage or alterations to the contents or systems of ANDORRACONNECT or
 third parties.</li>
 <li class="dark:text-gray-400">- Do not send mass and/or repetitive emails to a plurality of people, nor send email
 addresses of third parties without their consent.</li>
 <li class="dark:text-gray-400">- Do not carry out advertising actions for goods or services without the prior consent of
-Lausengier.</li>
+ANDORRACONNECT.</li>
     </ul>
     <p class="mt-5 dark:text-gray-400">Any User may report another User when they consider that they are breaching these
-Conditions, likewise all Users can inform Lausengier of any abuse or violation of these
-conditions, through the general contact email. Lausengier will verify this report, as soon
+Conditions, likewise all Users can inform ANDORRACONNECT of any abuse or violation of these
+conditions, through the general contact email. ANDORRACONNECT will verify this report, as soon
 as possible, and will adopt the measures it deems appropriate, reserving the right to
 withdraw and/or suspend any User from the Platform for non-compliance with these
-Conditions. Likewise, Lausengier reserves the right to withdraw and/or suspend any
+Conditions. Likewise, ANDORRACONNECT reserves the right to withdraw and/or suspend any
 message with illegal or offensive content, without prior notice or subsequent notification.</p>
         </div>
 
         <div>
-          <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">Lausengier's liability</h2>
+          <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">ANDORRACONNECT's liability</h2>
 
-          <p class="mb-5 dark:text-gray-400">Lausengier does not control and will not be responsible for the content posted by Users through the
+          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT does not control and will not be responsible for the content posted by Users through the
 Platform, and they are the only ones responsible for the legal adequacy of said content.</p>
-<p class="mb-5 dark:text-gray-400">Lausengier has no obligation to control and does not control the use that Users make of the
+<p class="mb-5 dark:text-gray-400">ANDORRACONNECT has no obligation to control and does not control the use that Users make of the
 Platform and, consequently, does not guarantee that Users use the Platform in accordance
 with the provisions of these Conditions, nor that they use diligently and/or cautious of it.
-Lausengier has no obligation to verify and does not verify the identity of the Users, nor the
+ANDORRACONNECT has no obligation to verify and does not verify the identity of the Users, nor the
 veracity, validity, completeness and/or authenticity of the data they provide.</p>
-<p class="mb-5 dark:text-gray-400">Lausengier excludes any liability for damages of any kind that may be due to the illicit use
+<p class="mb-5 dark:text-gray-400">ANDORRACONNECT excludes any liability for damages of any kind that may be due to the illicit use
 of the Platform by the Users or that may be due to the lack of veracity, validity,
 completeness and/or authenticity of the information that the Users provide to other
 Users.</p>
-<p class="mb-5 dark:text-gray-400">Without prejudice to the foregoing, Lausengier reserves the right to limit, totally or partially,
+<p class="mb-5 dark:text-gray-400">Without prejudice to the foregoing, ANDORRACONNECT reserves the right to limit, totally or partially,
 access to the Platform to certain Users, as well as to cancel, suspend, block or eliminate certain
 types of content, through the use of technological instruments suitable for the effect, if you have
 actual knowledge that the activity or information stored is illegal or that it damages the property
-or rights of a third party. In this sense, Lausengier may establish the necessary filters in order to
+or rights of a third party. In this sense, ANDORRACONNECT may establish the necessary filters in order to
 prevent illicit or harmful content from being dumped onto the network through the service.</p>
-<p class="mb-5 dark:text-gray-400">Lausengier will not be liable in the event of service interruptions, connection errors, lack of
+<p class="mb-5 dark:text-gray-400">ANDORRACONNECT will not be liable in the event of service interruptions, connection errors, lack of
 availability or deficiencies in the Internet access service, nor for interruptions of the Internet
 network or for any other reason beyond its control.</p>
-<p class="dark:text-gray-400">Lausengier is not responsible for any security errors that may occur or for any damage
+<p class="dark:text-gray-400">ANDORRACONNECT is not responsible for any security errors that may occur or for any damage
 that may be caused to the User's computer system (hardware and software), to the files
 or documents stored therein, as a result of the presence of a virus in the system computer or mobile terminal of the User that is used to connect to the services and
 contents of the Platform.</p>
@@ -164,7 +164,7 @@ be assumed by the User and the product must be returned in perfect conditions wi
 limiting the use of the product (as long as it does not go beyond of the mere verification
 of its good condition and operation).</p>
 <p class="dark:text-gray-400">To process the return of the product due to withdrawal, the User must contact
-Lausengier and follow their instructions for the return. Once Lausengier receives the
+ANDORRACONNECT and follow their instructions for the return. Once ANDORRACONNECT receives the
 product and verifies that it is in perfect condition, it will proceed to refund the amount of
 the product as well as the shipping costs paid by the User within a period of no more
 than 14 calendar days.</p>
@@ -172,10 +172,10 @@ than 14 calendar days.</p>
         <div>
           <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">Update and modification of the Platform</h2>
 
-          <p class="dark:text-gray-400">Lausengier may modify these Conditions at any time by email or by publishing the
+          <p class="dark:text-gray-400">ANDORRACONNECT may modify these Conditions at any time by email or by publishing the
 modified terms on the Platform. All modified terms will automatically take effect 30 days
 after being posted.</p>
-<p class="dark:text-gray-400">Likewise, Lausengier reserves the right to carry out, at any time and without prior notice,
+<p class="dark:text-gray-400">Likewise, ANDORRACONNECT reserves the right to carry out, at any time and without prior notice,
 updates, modifications or elimination of information contained in its Platform in the
 configuration and presentation of it and the conditions of access, without assuming any
 responsibility for it.</p>
@@ -183,29 +183,29 @@ responsibility for it.</p>
         <div>
           <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">Intellectual property</h2>
 
-          <p class="mb-5 dark:text-gray-400">Lausengier is the owner or licensee of the intellectual and industrial property rights that
+          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT is the owner or licensee of the intellectual and industrial property rights that
 apply to the texts and source code of the
 Platform protected under intellectual and industrial property laws. As a consequence of this,
-Lausengier is responsible for the exclusive exercise of the rights to exploit them in any form
+ANDORRACONNECT is responsible for the exclusive exercise of the rights to exploit them in any form
 and, in particular, the rights of reproduction, distribution, public communication and
 transformation, in accordance with Andorran and Spanish legislation on intellectual property rights and
 industrial. Platform doesn't store any information related to the services.</p>
 <p class="mb-5 dark:text-gray-400">Authorization to the User to access the Platform does not imply waiver, transmission, license
-or total or partial transfer of intellectual or industrial property rights by Lausengier.</p>
+or total or partial transfer of intellectual or industrial property rights by ANDORRACONNECT.</p>
 <p class="mb-5 dark:text-gray-400">It is not permitted to delete, circumvent or manipulate in any way the contents of the
-Lausengier Platform. Likewise, it is prohibited to modify, copy, reuse, exploit, reproduce,
+ANDORRACONNECT Platform. Likewise, it is prohibited to modify, copy, reuse, exploit, reproduce,
 publicly communicate, make second or subsequent publications, upload files, send by mail,
 transmit, use, process or distribute in any way all or part of the contents included on the
-Platform. of Lausengier for public or commercial purposes, if there is no express written
-authorization from Lausengier or, where applicable, the owner of the corresponding rights.</p>
-<p class="dark:text-gray-400">The User who proceeds to share any type of content through the Platform grants Lausengier
+Platform. of ANDORRACONNECT for public or commercial purposes, if there is no express written
+authorization from ANDORRACONNECT or, where applicable, the owner of the corresponding rights.</p>
+<p class="dark:text-gray-400">The User who proceeds to share any type of content through the Platform grants ANDORRACONNECT
 a non-exclusive, free and worldwide license limited to the reproduction and public
 communication of said content through the provision of the Platform services.</p>
         </div>
         <div>
           <h2 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white">Data protection</h2>
 
-          <p class="mb-5 dark:text-gray-400">Lausengier expresses its commitment to comply with the legislation in force at all times
+          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT expresses its commitment to comply with the legislation in force at all times
 regarding data protection, specifically with Organic Law 15/1999, of December 13, on the
 Protection of Personal Data; Royal Decree 1720/2007, of December 21, which approves
 the Regulations for the development of Organic Law 15/1999; Regulation (EU) 2016/679
@@ -213,10 +213,10 @@ of the European Parliament and of the Council, of April 27, 2016, and other appl
 legislation. In accordance with article 5 of Law 15/1999, of December 13, on the
 Protection of Personal Data, Users are informed that the personal data provided on the
 Platform will be subject to automated processing and will be to be part of the files owned
-by Lausengier, as responsible for the files duly registered in the General Registry of the
+by ANDORRACONNECT, as responsible for the files duly registered in the General Registry of the
 Andorran and Spanish Data Protection Agency, for the purposes of managing Users registered on the
-Lausengier Platform.</p>
-<p class="mb-5 dark:text-gray-400"><strong>Responsible for the treatment:</strong> Lausengier, SL NIF: B25828286</p>
+ANDORRACONNECT Platform.</p>
+<p class="mb-5 dark:text-gray-400"><strong>Responsible for the treatment:</strong> ANDORRACONNECT, SL NIF: B25828286</p>
 <p class="mb-5 dark:text-gray-400"><strong>Purpose of treatment: </strong>Management and provision of requested services</p>
 <p class="mb-5 dark:text-gray-400"><strong>Recipients of assignments
 or transfers: </strong>No transfer of data to third parties is foreseen.</p>
