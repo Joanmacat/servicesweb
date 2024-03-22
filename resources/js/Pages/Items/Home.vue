@@ -18,7 +18,7 @@ let showMoreButtonText = 'Load more';
 const loadMore = () => {
   // Añadir los siguientes cinco elementos a displayedItems
   const startIndex = displayedItems.value.length;
-  const endIndex = startIndex + 6;
+  const endIndex = startIndex + 9;
   displayedItems.value = props.items.slice(0, endIndex);
   showMore.value = false; // Mostrar elementos adicionales
 
@@ -31,7 +31,7 @@ const loadMore = () => {
 
 onMounted(() => {
   // Inicialmente cargar los primeros cinco elementos
-  displayedItems.value = props.items.slice(0, 6);
+  displayedItems.value = props.items.slice(0, 9);
 });
 
 let categoryList = [...new Set(props.items.map(item => item.category_name))];
@@ -65,7 +65,7 @@ const hashtagToSearchInput = (value) => {
   <HomeNavbar></HomeNavbar>
   <!-- CONTAINER-->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <Title width="200px" height="200px" title="Andorra Connect" subtitle="Find the services you are looking for!"></Title>
+    <Title width="200px" height="200px" title="Andorra Connect" subtitle="You are in the right place"></Title>
     <!-- Form -->
     <form>
       <div
@@ -83,7 +83,7 @@ const hashtagToSearchInput = (value) => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Search your service"
+            placeholder="Explore a selection of 35 available services in Andorra"
           />
         </div>
         <div class="flex-[0_0_auto]">

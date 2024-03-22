@@ -67,12 +67,7 @@ class ItemController extends Controller
      */
     public function edit(Item $item)
     {
-        return Inertia::render(
-            'Items/UpdateItem',
-            [
-                'item' => $item
-            ]
-        );
+        //
     }
 
     /**

@@ -3,8 +3,6 @@
 import { ref, computed, onMounted } from 'vue';
 import { Head, useForm } from '@inertiajs/vue3';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-//import AddNewItem from './AddNewItem.vue';
-import UpdateItem from './UpdateItem.vue';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
 
@@ -154,9 +152,12 @@ const closeUpdateModal = () => {
                   <option value="Accountant">Accountant</option>
                   <option value="Advocacy">Advocacy</option>
                   <option value="Banking">Banking</option>
+                  <option value="Business">Business</option>
                   <option value="Consultancy">Consultancy</option>
                   <option value="Concierge">Concierge</option>
                   <option value="Family Office">Family Office</option>
+                  <option value="Onboarding">Onboarding</option>
+                  <option value="Real State">Real State</option>
                 </select>
               </div>
 
@@ -233,6 +234,7 @@ const closeUpdateModal = () => {
                 <div class="mt-1">
                   <textarea
                     id="hs-feedback-post-comment-textarea-1"
+                    maxlength="255"
                     name="hs-feedback-post-comment-textarea-1"
                     rows="3"
                     class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
@@ -302,9 +304,12 @@ const closeUpdateModal = () => {
                   <option value="Accountant">Accountant</option>
                   <option value="Advocacy">Advocacy</option>
                   <option value="Banking">Banking</option>
+                  <option value="Business">Business</option>
                   <option value="Consultancy">Consultancy</option>
                   <option value="Concierge">Concierge</option>
                   <option value="Family Office">Family Office</option>
+                  <option value="Onboarding">Onboarding</option>
+                  <option value="Real State">Real State</option>
                 </select>
               </div>
 
@@ -381,6 +386,7 @@ const closeUpdateModal = () => {
                 <div class="mt-1">
                   <textarea
                     id="hs-feedback-post-comment-textarea-1"
+                    maxlength="255"
                     name="hs-feedback-post-comment-textarea-1"
                     rows="3"
                     class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-teal-500 focus:ring-teal-500 sm:p-4 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"

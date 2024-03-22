@@ -17,8 +17,8 @@ const props = defineProps({
   <div
     class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]"
   >
-    <div class="h-auto flex flex-col justify-center items-center rounded-t-xl">
-      <img :src="image" class="rounded-t-xl" />
+    <div class="h-auto flex flex-col justify-center items-center rounded-t-xl pt-6">
+      <img :src="image" class="rounded-t-xl w-52 h-auto" />
     </div>
     <div class="p-4 md:p-6">
       <span
@@ -50,7 +50,7 @@ const props = defineProps({
         :href="map"
         target="_blank"
       >
-        Location
+        <b>Contact</b>
       </a>
     </div>
   </div>
