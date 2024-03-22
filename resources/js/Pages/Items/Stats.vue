@@ -9,10 +9,13 @@ const props = defineProps({
 const totalServices = props.items.length;
 const advocacyServices = props.items.filter(item => item.category_name === "Advocacy");
 const accountantServices = props.items.filter(item => item.category_name === "Accountant");
+const bankingServices = props.items.filter(item => item.category_name === "Banking");
+const businessServices = props.items.filter(item => item.category_name === "Business");
 const consultancyServices = props.items.filter(item => item.category_name === "Consultancy");
 const conciergeServices = props.items.filter(item => item.category_name === "Concierge");
 const familyofficeServices = props.items.filter(item => item.category_name === "Family Office");
-const bankingServices = props.items.filter(item => item.category_name === "Banking");
+const onboardingServices = props.items.filter(item => item.category_name === "Onboarding");
+const realstateServices = props.items.filter(item => item.category_name === "Real State");
 
 </script>
 <template>
@@ -64,6 +67,14 @@ const bankingServices = props.items.filter(item => item.category_name === "Banki
 
                             <!-- Stats -->
                             <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Business</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ businessServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of business services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
                             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Consultancy</h4>
                             <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ consultancyServices.length }}</p>
                             <p class="mt-1 text-gray-500">Number of consultancy services</p>
@@ -83,6 +94,22 @@ const bankingServices = props.items.filter(item => item.category_name === "Banki
                             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Family Office</h4>
                             <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ familyofficeServices.length }}</p>
                             <p class="mt-1 text-gray-500">Number of family office services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Onboarding</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ onboardingServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of onboarding services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Real State</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ realstateServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of real state services</p>
                             </div>
                             <!-- End Stats -->
 
