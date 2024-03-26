@@ -15,7 +15,9 @@ const consultancyServices = props.items.filter(item => item.category_name === "C
 const conciergeServices = props.items.filter(item => item.category_name === "Concierge");
 const familyofficeServices = props.items.filter(item => item.category_name === "Family Office");
 const onboardingServices = props.items.filter(item => item.category_name === "Onboarding");
-const realstateServices = props.items.filter(item => item.category_name === "Real State");
+const realstateServices = props.items.filter(item => item.category_name === "Real Estate");
+const insuranceServices = props.items.filter(item => item.category_name === "Insurance");
+
 
 </script>
 <template>
@@ -99,6 +101,14 @@ const realstateServices = props.items.filter(item => item.category_name === "Rea
 
                             <!-- Stats -->
                             <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Insurance</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ insuranceServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of insurance services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
                             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Onboarding</h4>
                             <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ onboardingServices.length }}</p>
                             <p class="mt-1 text-gray-500">Number of onboarding services</p>
@@ -107,9 +117,9 @@ const realstateServices = props.items.filter(item => item.category_name === "Rea
 
                             <!-- Stats -->
                             <div>
-                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Real State</h4>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Real Estate</h4>
                             <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ realstateServices.length }}</p>
-                            <p class="mt-1 text-gray-500">Number of real state services</p>
+                            <p class="mt-1 text-gray-500">Number of real estate services</p>
                             </div>
                             <!-- End Stats -->
 

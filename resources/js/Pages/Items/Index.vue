@@ -156,8 +156,9 @@ const closeUpdateModal = () => {
                   <option value="Consultancy">Consultancy</option>
                   <option value="Concierge">Concierge</option>
                   <option value="Family Office">Family Office</option>
+                  <option value="Insurance">Insurance</option>
                   <option value="Onboarding">Onboarding</option>
-                  <option value="Real State">Real State</option>
+                  <option value="Real Estate">Real Estate</option>
                 </select>
               </div>
 
@@ -308,8 +309,9 @@ const closeUpdateModal = () => {
                   <option value="Consultancy">Consultancy</option>
                   <option value="Concierge">Concierge</option>
                   <option value="Family Office">Family Office</option>
+                  <option value="Insurance">Insurance</option>
                   <option value="Onboarding">Onboarding</option>
-                  <option value="Real State">Real State</option>
+                  <option value="Real Estate">Real Estate</option>
                 </select>
               </div>
 
@@ -442,7 +444,6 @@ const closeUpdateModal = () => {
                         <button type="button" @click="openUpdateModal(item.id)" class="mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-100 text-yellow-800 hover:bg-yellow-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-yellow-900 dark:text-yellow-500 dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Edit</button>
                         <button type="button" @click="deleteItem(item.id)" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-100 text-red-800 hover:bg-red-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-red-900 dark:text-red-500 dark:hover:text-red-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Delete</button>
                         </td>
-                        <UpdateItem :id="itemId"></UpdateItem>
                     </tr>
                     </tbody>
                 </table>

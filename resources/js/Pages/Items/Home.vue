@@ -83,7 +83,7 @@ const hashtagToSearchInput = (value) => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Explore a selection of 35 available services in Andorra"
+            placeholder="Connect with 70 available services in Andorra"
           />
         </div>
         <div class="flex-[0_0_auto]">
@@ -107,7 +107,7 @@ const hashtagToSearchInput = (value) => {
     </form>
     <br />
     <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-      <a href="#card-grid">#{{ item }}</a>
+      <a href="#card-grid">{{ item }}</a>
     </button>
     <!-- GRID -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">

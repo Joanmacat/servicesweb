@@ -274,7 +274,7 @@ import Footer from './Footer.vue';
               aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five"
             >
               <p class="text-gray-800 dark:text-gray-200">
-                If you have any questions or inquiries, we encourage you to reach out to us through our Contact page. 
+                If you have any questions or inquiries, we encourage you to reach out to us through our <a href="/contact">Contact page</a>. 
               </p>
             </div>
           </div>
