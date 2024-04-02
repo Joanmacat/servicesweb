@@ -18,20 +18,20 @@ let showMoreButtonText = 'Load more';
 const loadMore = () => {
   // Añadir los siguientes cinco elementos a displayedItems
   const startIndex = displayedItems.value.length;
-  const endIndex = startIndex + 9;
+  const endIndex = startIndex + 21;
   displayedItems.value = props.items.slice(0, endIndex);
   showMore.value = false; // Mostrar elementos adicionales
 
   if(displayedItems.value.length < props.items.length) {
     showMoreButtonText = 'Load more'
-  } else {
+  } else if(displayedItems.value.length == props.items.length) {
     showMoreButtonText = 'End of list ;_;'
   }
 };
 
 onMounted(() => {
   // Inicialmente cargar los primeros cinco elementos
-  displayedItems.value = props.items.slice(0, 9);
+  displayedItems.value = props.items.slice(0, 21);
 });
 
 let categoryList = [...new Set(props.items.map(item => item.category_name))];
@@ -51,7 +51,8 @@ const servicesList = props.items;
      category_name.toLowerCase().includes(searchValue)
    );
 
-   return titleFiltered.length > 0 ? titleFiltered : categoryFiltered;
+      return titleFiltered.length > 0 ? titleFiltered : categoryFiltered;
+
  });
 
 /** Hashtag buttons **/
@@ -65,7 +66,7 @@ const hashtagToSearchInput = (value) => {
   <HomeNavbar></HomeNavbar>
   <!-- CONTAINER-->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <Title width="200px" height="200px" title="Andorra Connect" subtitle="You are in the right place"></Title>
+    <Title width="200px" height="200px" title="Andorra Connect" subtitle="Your business gateway"></Title>
     <!-- Form -->
     <form>
       <div
@@ -83,7 +84,7 @@ const hashtagToSearchInput = (value) => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Connect with 70 available services in Andorra"
+            placeholder="Connect with 106 available services in Andorra and counting!"
           />
         </div>
         <div class="flex-[0_0_auto]">
@@ -138,7 +139,7 @@ const hashtagToSearchInput = (value) => {
       <!-- END GRID -->
     </div>
     <div class="py-8">
-      <button v-if="!showMore && items.length > 6" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">{{ showMoreButtonText }}</button>
+      <button v-if="!showMore && displayedItems.length < items.length || filterServices.length < items.length" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">{{ showMoreButtonText }}</button>
     </div>
     <Footer></Footer>
   </div>
