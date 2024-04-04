@@ -84,7 +84,7 @@ const hashtagToSearchInput = (value) => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Connect with 106 available services in Andorra and counting!"
+            placeholder="Connect with 108 available services in Andorra and counting!"
           />
         </div>
         <div class="flex-[0_0_auto]">
@@ -139,7 +139,7 @@ const hashtagToSearchInput = (value) => {
       <!-- END GRID -->
     </div>
     <div class="py-8">
-      <button v-if="!showMore && displayedItems.length < items.length || filterServices.length < items.length" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">{{ showMoreButtonText }}</button>
+      <button v-if="!showMore && displayedItems.length < items.length" v-show="searchInput == ''" @click="loadMore" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">{{ showMoreButtonText }}</button>
     </div>
     <Footer></Footer>
   </div>
