@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Andorra Connect - Your business gateway</title>
+        <title>Andorra Connect - Explore services for business in Andorra.</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
