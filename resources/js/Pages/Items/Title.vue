@@ -44,12 +44,12 @@ defineProps({
         </g>
         </svg>
     <div class="text-container">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+      <h1 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
         {{ title }}
-      </h2>
-      <p class="text-gray-600 dark:text-gray-400">
+      </h1>
+      <h2 class="text-gray-600 dark:text-gray-400">
         {{ subtitle }}
-      </p>
+      </h2>
     </div>
     </div>
     <!-- End Title -->

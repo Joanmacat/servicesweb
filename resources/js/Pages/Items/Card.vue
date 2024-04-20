@@ -18,7 +18,7 @@ const props = defineProps({
     class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]"
   >
     <div class="h-auto flex flex-col justify-center items-center rounded-t-xl pt-6">
-      <img :src="image" class="rounded-t-xl w-40 h-auto" />
+      <img :src="image" :alt="description" :title="title" class="rounded-t-xl w-40 h-auto" />
     </div>
     <div class="p-4 md:p-6">
       <span
