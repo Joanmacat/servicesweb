@@ -66,7 +66,7 @@ const hashtagToSearchInput = (value) => {
   <HomeNavbar></HomeNavbar>
   <!-- CONTAINER-->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <Title width="200px" height="200px" title="Andorra Connect" subtitle="Explore services for business in Andorra"></Title>
+    <Title width="150px" height="150px" title="Andorra Connect" subtitle="Explore services for business in Andorra"></Title>
     <!-- Form -->
     <form>
       <div
@@ -107,11 +107,27 @@ const hashtagToSearchInput = (value) => {
       </div>
     </form>
     <br />
-    <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-      <a href="#card-grid">{{ item }}</a>
+    
+    <!-- COLLAPSE BUTTON -->
+    <button type="button" class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
+      Filters
+      <svg class="hs-collapse-open:rotate-180 flex-shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
     </button>
+    <div id="hs-basic-collapse-heading" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
+      <div class="mt-5">
+        <p class="text-gray-500 dark:text-neutral-400">
+          <!-- HASHTAGS BUTTON -->
+          <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+            <a href="#card-grid">{{ item }}</a>
+          </button>
+        </p>
+      </div>
+    </div>
+    
     <!-- GRID -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">
+    <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">
 
       <!-- Regular card -->  
       <Card
