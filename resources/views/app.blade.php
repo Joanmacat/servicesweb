@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="At Andorraconnect.com ✌, you can explore a variety of 🛠️ services to discover the 🧾 information you seek about companies, businesses, opportunities, providers, real estate, and much more for your ventures in Andorra. Don't hesitate to get in touch through our contact page on the website for further assistance.">
 
-        <title>Andorra Connect - Explore services for business in Andorra.</title>
+        <title>Andorra Connect - Contact services for business, real estate website in Andorra and more.</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

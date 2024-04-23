@@ -245,7 +245,7 @@ Barcelona.</p>
 consumers in the European Union to resolve disputes that arise in electronic commerce
 amicably (article 14 section 1 Regulation (EU) 524/2013) therefore which Platform Users
 have the right to file complaints at the following link: <a href="https://webgate.ec.europa.eu/
-odr/main/index.cfm?event=main.home.show&lng=ES" target="__blank">Online Dispute Resolution (European Comission)</a></p>
+odr/main/index.cfm?event=main.home.show&lng=ES" target="__blank" rel="noreferrer">Online Dispute Resolution (European Comission)</a></p>
         </div>
       </div>
     </div>
