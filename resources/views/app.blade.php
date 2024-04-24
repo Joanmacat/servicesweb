@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index, follow">
-        <meta name="description" content="At Andorraconnect.com ✌, you can explore a variety of 🛠️ services to discover the 🧾 information you seek about companies, businesses, opportunities, providers, real estate, and much more for your ventures in Andorra. Don't hesitate to get in touch through our contact page on the website for further assistance.">
+        <meta name="description" content="Discover a range of services at Andorraconnect.com for info on companies, businesses, opportunities, real estate, and more in Andorra. Contact us for help in our website!">
+        <link rel="canonical" href="https://andorraconnect.com" />
 
-        <title>Andorra Connect - Contact services for business, real estate website in Andorra and more.</title>
 
+        <title>Andorra Connect - Contact business, services, real estate</title>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
