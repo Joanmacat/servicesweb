@@ -37,6 +37,29 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/blog', function () {
+    return Inertia::render('BlogPage', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+/** BLOG ARTICLES **/
+
+Route::get('/article', function () {
+    return Inertia::render('Articles/Article', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+/** END BLOG ARTICLES **/
+
+
 Route::get('/sitemap', function () {
     return Inertia::render('Sitemap', [
         'canLogin' => Route::has('login'),
