@@ -46,20 +46,6 @@ Route::get('/blog', function () {
     ]);
 });
 
-/** BLOG ARTICLES **/
-
-Route::get('/article', function () {
-    return Inertia::render('Articles/Article', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
-
-/** END BLOG ARTICLES **/
-
-
 Route::get('/sitemap', function () {
     return Inertia::render('Sitemap', [
         'canLogin' => Route::has('login'),
@@ -104,6 +90,27 @@ Route::get('/contact', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+/*** BLOG POSTS ***/
+Route::get('/andorra-government-ai-ethical-code', function () {
+    return Inertia::render('Articles/Andorra-government-ai-ethical-code', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+Route::get('/andorra-flaunts-economic-prowess', function () {
+    return Inertia::render('Articles/Andorra-flaunts-economic-prowess', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+/*** END BLOG POSTS ***/
 
 Route::post('/contact', ContactController::class)->name('contact');
 
