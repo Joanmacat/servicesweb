@@ -37,15 +37,6 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/blog', function () {
-    return Inertia::render('BlogPage', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
-
 Route::get('/sitemap', function () {
     return Inertia::render('Sitemap', [
         'canLogin' => Route::has('login'),

@@ -86,6 +86,11 @@ defineProps({
           >
           <a
             class="font-medium text-gray-500 hover:text-teal-600 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
+            href="/blog"
+            >Blog</a
+          >
+          <a
+            class="font-medium text-gray-500 hover:text-teal-600 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
             href="/contact"
             >Contact</a
           >
