@@ -26,6 +26,7 @@ import Footer from '../Components/Footer.vue';
       <ul class="mt-4">
         <li><a href="/" class="text-teal-500 hover:text-teal-700">- Home</a></li>
         <li><a href="/about" class="text-teal-500 hover:text-teal-700">- About</a></li>
+        <li><a href="/blog" class="text-teal-500 hover:text-teal-700">- Blog</a></li>
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
         <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>
         <li><a href="/sitemap" class="text-teal-500 hover:text-teal-700">- Sitemap</a></li>

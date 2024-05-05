@@ -110,6 +110,15 @@ Route::get('/andorra-flaunts-economic-prowess', function () {
     ]);
 });
 
+Route::get('/morabanc-launches-first-bitcoin-fund', function () {
+    return Inertia::render('Articles/Morabanc-launches-first-bitcoin-fund', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 Route::post('/contact', ContactController::class)->name('contact');
