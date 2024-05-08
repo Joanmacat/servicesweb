@@ -19,7 +19,7 @@ import Footer from '../../Components/Footer.vue';
     <div class="md:max-w-screen-sm lg:max-w-[992px] px-4 sm:px-6 lg:px-8 pb-12 md:pt-6 sm:pb-20 mx-auto">
       <div class="grid gap-4 md:gap-8">
         <div>
-          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT (hereinafter, ANDORRACONNECT) uses cookies on the website ANDORRACONNECT.fr
+          <p class="mb-5 dark:text-gray-400">ANDORRACONNECT (hereinafter, ANDORRACONNECT) uses cookies on the website ANDORRACONNECT.COM
 (hereinafter, the website) to help improve the service of the user of the website
 (hereinafter, the User) by measuring usage and performance of the website as well as to
 optimize and personalize it. Cookies are files sent to a browser through a web server to
