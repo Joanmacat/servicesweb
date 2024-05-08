@@ -119,6 +119,33 @@ Route::get('/morabanc-launches-first-bitcoin-fund', function () {
     ]);
 });
 
+Route::get('/fitch-ratings-andorra-inflation-2024', function () {
+    return Inertia::render('Articles/Fitch-ratings-andorra-inflation-2024', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+Route::get('/andorra-house-prices-breaks-records', function () {
+    return Inertia::render('Articles/Andorra-house-prices-breaks-records', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+Route::get('/andorra-banking-renaissance', function () {
+    return Inertia::render('Articles/Andorra-banking-renaissance', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 Route::post('/contact', ContactController::class)->name('contact');
