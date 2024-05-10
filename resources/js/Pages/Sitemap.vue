@@ -24,9 +24,17 @@ import Footer from '../Components/Footer.vue';
       <!-- End Title -->
       <p class="mt-1 text-gray-600 dark:text-gray-400 text-2xl font-bold">Pages</p>
       <ul class="mt-4">
-        <li><a href="/" class="text-teal-500 hover:text-teal-700">- Home</a></li>
-        <li><a href="/about" class="text-teal-500 hover:text-teal-700">- About</a></li>
-        <li><a href="/blog" class="text-teal-500 hover:text-teal-700">- Blog</a></li>
+        <li><a href="/" class="mb-6 text-teal-500 hover:text-teal-700">- Home</a></li>
+        <li><a href="/about" class="mb-6 text-teal-500 hover:text-teal-700">- About</a></li>
+        <li><a href="/blog" class="mb-6 text-teal-500 hover:text-teal-700">- Blog</a></li>
+        
+        <li><a href="/andorra-government-ai-ethical-code" class="text-teal-500 hover:text-teal-700">-- Andorran Government approves an ethical code on Artificial Intelligence</a></li>
+        <li><a href="/andorra-flaunts-economic-prowess" class="text-teal-500 hover:text-teal-700">-- Andorra flaunts its economic prowess: a tangible reality</a></li>
+        <li><a href="/morabanc-launches-first-bitcoin-fund" class="text-teal-500 hover:text-teal-700">-- MoraBanc launches the First Bitcoin Fund</a></li>
+        <li><a href="/fitch-ratings-andorra-inflation-2024" class="text-teal-500 hover:text-teal-700">-- Andorra’s Economic Outlook: Balancing Inflation and Growth</a></li>
+        <li><a href="/andorra-house-prices-breaks-records" class="text-teal-500 hover:text-teal-700">-- Andorra’s Soaring House Prices</a></li>
+        <li><a href="/andorra-banking-renaissance" class="text-teal-500 hover:text-teal-700">-- Andorra’s Banking Renaissance: A Tale of Transformation and Global Ambitions</a></li>
+        
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
         <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>
         <li><a href="/sitemap" class="text-teal-500 hover:text-teal-700">- Sitemap</a></li>
