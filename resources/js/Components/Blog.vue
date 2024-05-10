@@ -14,18 +14,54 @@ import Footer from './Footer.vue';
   <!-- Grid -->
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <!-- Card -->
+    <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40" href="/andorra-sign-association-agreement">
+      <div class="aspect-w-16 aspect-h-11">
+        <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1625440153141-1ae4c27ff33b?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Andorra sign association agreement">
+      </div>
+      <div class="my-6">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-white">
+          EU and Andorra Set to Sign Association Agreement: Strengthening Ties and Opening New Opportunities” 🌍 🤝
+        </h3>
+        <p class="mt-5 text-gray-600 dark:text-neutral-400">
+          The European Commission has officially ratified its intention to sign the association agreement with Andorra before the end of this year. After thorough technical and legal review of the negotiated text of the association agreement involving Andorra, San Marino, and the EU, the European Commission considers the negotiations concluded.        </p>
+      </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 10/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          3 min read
+         </li>
+      </ul>
+      <div class="mt-auto flex items-center gap-x-3">
+          <img class="w-7 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Anna Ludic">
+        <div>
+          <h5 class="text-sm text-gray-800 dark:text-neutral-200">By Anna Ludic</h5>
+        </div>
+      </div>
+    </a>
+    <!-- End Card -->
+    <!-- Card -->
     <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40" href="/andorra-banking-renaissance">
       <div class="aspect-w-16 aspect-h-11">
         <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1462206092226-f46025ffe607?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Andorra banking renaissance">
       </div>
       <div class="my-6">
         <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-white">
-          Andorra’s Banking Renaissance: A Tale of Transformation and Global Ambitions 🌟🏦🌎
+          Andorra’s Banking Renaissance: A Tale of Transformation and Global Ambitions 🌟 🏦 🌎
         </h3>
         <p class="mt-5 text-gray-600 dark:text-neutral-400">
           Andorra’s banking market may be small in size, but it punches well above its weight. The banking sector is a cornerstone of the country’s economy, providing essential services to residents and international clients alike. However, this seemingly tranquil industry has faced seismic shifts, forcing banks to rethink their strategies and embrace change.
         </p>
       </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 08/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          5 min read
+         </li>
+      </ul>
       <div class="mt-auto flex items-center gap-x-3">
           <img class="w-7 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Anna Ludic">
         <div>
@@ -47,6 +83,14 @@ import Footer from './Footer.vue';
           Andorra, nestled in the heart of the Pyrenees, is making waves in the real estate market. House prices have skyrocketed, setting all-time highs as demand surges. Let’s dive into the numbers and explore this fascinating trend.
         </p>
       </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 08/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          5 min read
+         </li>
+      </ul>
       <div class="mt-auto flex items-center gap-x-3">
           <img class="w-7 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Anna Ludic">
         <div>
@@ -68,6 +112,14 @@ import Footer from './Footer.vue';
           Fitch Ratings foresees an average inflation rate of 3.8% for Andorra in 2024, but with a risk of further escalation.
         </p>
       </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 08/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          3 min read
+         </li>
+      </ul>
       <div class="mt-auto flex items-center gap-x-3">
           <img class="w-7 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Anna Ludic">
         <div>
@@ -89,6 +141,14 @@ import Footer from './Footer.vue';
           MoraBanc, the leading bank in Andorra, has launched the innovative Mora Bitcoin Fund FI, the country’s first Bitcoin investment fund.
         </p>
       </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 08/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          3 min read
+         </li>
+      </ul>
       <div class="mt-auto flex items-center gap-x-3">
           <img class="w-7 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Anna Ludic">
         <div>
@@ -110,6 +170,14 @@ import Footer from './Footer.vue';
           In the present landscape, the Principality of Andorra proudly towers above the European Union's average GDP per capita. Freshly released data from the European Statistical Office, Eurostat, unveils Andorra's substantial lead over the EU and eurozone norms.
         </p>
       </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 08/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          3 min read
+         </li>
+      </ul>
       <div class="mt-auto flex items-center gap-x-3">
           <img class="w-7 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Anna Ludic">
         <div>
@@ -132,6 +200,14 @@ import Footer from './Footer.vue';
           The text provides guidelines to both the public and private sectors, as well as to the general population, with the essential resources necessary for the proper deployment of Artificial Intelligence (AI).
         </p>
       </div>
+      <ul class="mb-6 text-xs text-gray-500 dark:text-neutral-500">
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Published: 08/05/2024
+        </li>
+        <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          3 min read
+         </li>
+      </ul>
       <div class="mt-auto flex items-center gap-x-3">
         <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description">
         <div>

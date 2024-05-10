@@ -146,6 +146,15 @@ Route::get('/andorra-banking-renaissance', function () {
     ]);
 });
 
+Route::get('/andorra-sign-association-agreement', function () {
+    return Inertia::render('Articles/Andorra-sign-association-agreement', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 Route::post('/contact', ContactController::class)->name('contact');

@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed } from 'vue';
 import { Head, useForm } from '@inertiajs/vue3';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { toast } from 'vue3-toastify';
@@ -20,6 +20,7 @@ const form = useForm({
     map: '',
     description: '',
 });
+
 
 const searchTerm = ref('');
 const itemId = ref();
@@ -41,17 +42,6 @@ const deleteItem = (id) => {
     if(confirm("Do you really want to delete the item?")) {
         form.delete(route('items.destroy', id));
     }
-}
-
-const submitUpdateItem = (id) => {
-  try {
-    if(confirm("Do you really want to update the item?")) {
-      form.patch(route('items.update', id));
-      toast.warn("Item updated successfully")
-    }
-  } catch (error) {
-    toast.error("Something went wrong: ", error);
-  }
 }
 
 // Función para filtrar los elementos según el término de búsqueda
