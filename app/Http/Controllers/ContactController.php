@@ -11,7 +11,7 @@ class ContactController extends Controller
 {
     public function __invoke(ContactRequest $request)
     {
-        Mail::to('joanmacat@gmail.com')->send(new ContactUs(
+        Mail::to('hello@andorraconnect.com')->send(new ContactUs(
             $request->name,
             $request->lastName,
             $request->email,
