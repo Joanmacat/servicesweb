@@ -88,7 +88,7 @@ const hashtagToSearchInput = (value) => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Connect with 188 available services in Andorra and counting!"
+            placeholder="Connect with 191 available services in Andorra and counting!"
             @keyup.enter="focusForm()"
           />
         </div>

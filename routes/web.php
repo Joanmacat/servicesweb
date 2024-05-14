@@ -82,14 +82,14 @@ Route::get('/cookies', function () {
     ]);
 });
 
-Route::get('/contact', function () {
+/**Route::get('/contact', function () {
     return Inertia::render('ContactPage', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+});**/
 
 /*** BLOG POSTS ***/
 Route::get('/andorra-government-ai-ethical-code', function () {
@@ -157,7 +157,7 @@ Route::get('/andorra-sign-association-agreement', function () {
 
 /*** END BLOG POSTS ***/
 
-Route::post('/contact', ContactController::class)->name('contact');
+//Route::post('/contact', ContactController::class)->name('contact');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
