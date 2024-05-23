@@ -35,6 +35,7 @@ import Footer from '../Components/Footer.vue';
         <li><a href="/andorra-house-prices-breaks-records" class="text-teal-500 hover:text-teal-700">-- Andorra’s Soaring House Prices</a></li>
         <li><a href="/andorra-banking-renaissance" class="text-teal-500 hover:text-teal-700">-- Andorra’s Banking Renaissance: A Tale of Transformation and Global Ambitions</a></li>
         <li><a href="/andorra-sign-association-agreement" class="text-teal-500 hover:text-teal-700">-- EU and Andorra Set to Sign Association Agreement: Strengthening Ties and Opening New Opportunities</a></li>
+        <li><a href="/retiring-in-andorra" class="text-teal-500 hover:text-teal-700">-- Retiring in Andorra: A Haven for Tranquility and Financial Advantage</a></li>
         
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
         <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>
