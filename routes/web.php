@@ -155,6 +155,15 @@ Route::get('/andorra-sign-association-agreement', function () {
     ]);
 });
 
+Route::get('/retiring-in-andorra', function () {
+    return Inertia::render('Articles/Retiring-in-andorra', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
