@@ -164,6 +164,15 @@ Route::get('/retiring-in-andorra', function () {
     ]);
 });
 
+Route::get('/andorra-digital-content-creators', function () {
+    return Inertia::render('Articles/Andorra-digital-content-creators', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
