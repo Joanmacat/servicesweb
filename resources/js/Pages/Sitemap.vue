@@ -37,6 +37,7 @@ import Footer from '../Components/Footer.vue';
         <li><a href="/andorra-sign-association-agreement" class="text-teal-500 hover:text-teal-700">-- EU and Andorra Set to Sign Association Agreement: Strengthening Ties and Opening New Opportunities</a></li>
         <li><a href="/retiring-in-andorra" class="text-teal-500 hover:text-teal-700">-- Retiring in Andorra: A Haven for Tranquility and Financial Advantage</a></li>
         <li><a href="/andorra-digital-content-creators" class="text-teal-500 hover:text-teal-700">-- Why Andorra is a Top place for Digital Content Creators</a></li>
+        <li><a href="/eu-agreement-should-facilitate-the-internationalization" class="text-teal-500 hover:text-teal-700">-- The EU Agreement Should “Facilitate the Internationalization” of Andorran Companies.</a></li>
         
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
         <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>
