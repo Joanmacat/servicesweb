@@ -173,6 +173,15 @@ Route::get('/andorra-digital-content-creators', function () {
     ]);
 });
 
+Route::get('/eu-agreement-should-facilitate-the-internationalization', function () {
+    return Inertia::render('Articles/EU-agreement-should-facilitate-the-internationalization', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
