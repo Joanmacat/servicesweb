@@ -182,6 +182,15 @@ Route::get('/eu-agreement-should-facilitate-the-internationalization', function 
     ]);
 });
 
+Route::get('/women-rights-in-andorra', function () {
+    return Inertia::render('Articles/Women-rights-in-andorra', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
