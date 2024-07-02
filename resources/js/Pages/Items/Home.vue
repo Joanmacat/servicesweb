@@ -38,7 +38,23 @@ onMounted(() => {
   displayedItems.value = props.items.slice(0, 21);
 });
 
+/**  Companies Category List **/
 let categoryList = [...new Set(props.items.map(item => item.category_name))];
+const companiesList = ref(["Accountant", "Advocacy", "Banking", "Business", "Consultancy", "Concierge", "Family Office", "Insurance", "Onboarding", "Real Estate"])
+const filteredCompaniesList = computed(() => {
+  return companiesList.value.filter(item => 
+    item === "Accountant" ||
+    item === "Advocacy" ||
+    item === "Banking" ||
+    item === "Business" ||
+    item === "Consultancy" ||
+    item === "Concierge" ||
+    item === "Family Office" ||
+    item === "Insurance" ||
+    item === "Onboarding" ||
+    item === "Real Estate"
+  );
+})
 
 const servicesList = props.items;
 
@@ -63,6 +79,24 @@ const servicesList = props.items;
 const hashtagToSearchInput = (value) => {
   searchInput.value = value
 }
+
+/** HealthList **/
+const healthList = ref(["Dentist", "General medicine", "Gynecologist", "Neurologist", "Ophtalmologist", "Physiotherapist", "Mental health", "Pediatrician", "Rheumatology", "Traumatologist", "Urologist"]);
+
+const healthFilteredList = computed(() => {
+  return healthList.value.filter(item => item === "Dentist" ||
+    item === "General medicine" ||
+    item === "Gynecologist" ||
+    item === "Neurologist" ||
+    item === "Ophtalmologist" ||
+    item === "Physiotherapist" ||
+    item === "Mental health" ||
+    item === "Rheumatologist" ||
+    item === "Pediatrician" ||
+    item === "Traumatologist" ||
+    item === "Urologist"
+  );
+})
 
 </script>
 
@@ -114,23 +148,45 @@ const hashtagToSearchInput = (value) => {
     <br />
     
     <!-- COLLAPSE BUTTON -->
-    <button type="button" class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
-      Filters
+    <button type="button" class="hs-collapse-toggle mr-6 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
+      Companies
       <svg class="hs-collapse-open:rotate-180 flex-shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m6 9 6 6 6-6"></path>
       </svg>
     </button>
+    <button type="button" class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading-health">
+      Health
+      <svg class="hs-collapse-open:rotate-180 flex-shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
+    </button>
+
+    <!-- Companies collapse-->
     <div id="hs-basic-collapse-heading" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
       <div class="mt-5">
         <p class="text-gray-500 dark:text-neutral-400">
           <!-- HASHTAGS BUTTON -->
-          <button v-for="item in categoryList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+          <button v-for="item in filteredCompaniesList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
             <a href="#card-grid">{{ item }}</a>
           </button>
         </p>
       </div>
     </div>
-    
+    <!-- Companies collapse -->
+
+    <!-- Health collapse-->
+    <div id="hs-basic-collapse-heading-health" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
+      <div class="mt-5">
+        <p class="text-gray-500 dark:text-neutral-400">
+          <!-- HASHTAGS BUTTON -->
+          <button v-for="item in healthFilteredList" @click="hashtagToSearchInput(item)" type="button" class="mb-6 mr-4 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:border-teal-600 hover:text-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-400 dark:hover:text-teal-500 dark:hover:border-teal-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+            <a href="#card-grid">{{ item }}</a>
+          </button>
+        </p>
+      </div>
+    </div>
+    <!-- Companies collapse -->
+
     <!-- GRID -->
     <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="card-grid">
 

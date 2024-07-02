@@ -13,6 +13,21 @@ const bankingServices = props.items.filter(item => item.category_name === "Banki
 const businessServices = props.items.filter(item => item.category_name === "Business");
 const consultancyServices = props.items.filter(item => item.category_name === "Consultancy");
 const conciergeServices = props.items.filter(item => item.category_name === "Concierge");
+
+/** HEALTH SERVICES **/
+const dentistServices = props.items.filter(item => item.category_name === "Dentist");
+const generalmedicineServices = props.items.filter(item => item.category_name === "General medicine");
+const gynecologistServices = props.items.filter(item => item.category_name === "Gynecologist");
+const neurologistServices = props.items.filter(item => item.category_name === "Neurologist");
+const ophtalmologistServices = props.items.filter(item => item.category_name === "Ophtalmologist");
+const physiotherapistServices = props.items.filter(item => item.category_name === "Physiotherapist");
+const mentalhealthServices = props.items.filter(item => item.category_name === "Mental health");
+const rheumatologistServices = props.items.filter(item => item.category_name === "Rheumatologist");
+const pediatricianServices = props.items.filter(item => item.category_name === "Pediatrician");
+const traumatologistServices = props.items.filter(item => item.category_name === "Traumatologist");
+const urologistServices = props.items.filter(item => item.category_name === "Urologist");
+/** END HEALTH SERVICES **/
+
 const familyofficeServices = props.items.filter(item => item.category_name === "Family Office");
 const onboardingServices = props.items.filter(item => item.category_name === "Onboarding");
 const realstateServices = props.items.filter(item => item.category_name === "Real Estate");
@@ -88,6 +103,102 @@ const insuranceServices = props.items.filter(item => item.category_name === "Ins
                             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Concierge</h4>
                             <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ conciergeServices.length }}</p>
                             <p class="mt-1 text-gray-500">Number of concierge services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Concierge</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ conciergeServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of concierge services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Dentist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ dentistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of dentist services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">General medicine</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ generalmedicineServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of general medicine services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Gynecologist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ gynecologistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of gynecologists services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Neurologist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ neurologistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of neurologists services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Ophtalmologist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ ophtalmologistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of ophtalmologists services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Physiotherapist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ physiotherapistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of physiotherapists services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Mental health</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ mentalhealthServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of mental health services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Rheumatologist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ rheumatologistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of rheumatologists services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Pediatrician</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ pediatricianServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of pediatricians services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Traumatologist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ traumatologistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of traumatologists services</p>
+                            </div>
+                            <!-- End Stats -->
+
+                            <!-- Stats -->
+                            <div>
+                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Urologist</h4>
+                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ urologistServices.length }}</p>
+                            <p class="mt-1 text-gray-500">Number of urologists services</p>
                             </div>
                             <!-- End Stats -->
 
