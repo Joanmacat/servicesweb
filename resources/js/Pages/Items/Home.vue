@@ -104,7 +104,7 @@ const healthFilteredList = computed(() => {
   <HomeNavbar></HomeNavbar>
   <!-- CONTAINER-->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <Title width="150px" height="150px" title="Andorra Connect" subtitle="Explore services for business in Andorra"></Title>
+    <Title width="150px" height="150px" title="Andorra Connect" subtitle="Contact business, health, services and real estate"></Title>
     <!-- Form -->
     <form>
       <div
@@ -114,8 +114,7 @@ const healthFilteredList = computed(() => {
           <label
             for="hs-search-article-1"
             class="block text-sm text-gray-700 font-medium dark:text-white"
-            ><span class="sr-only">Search your service</span></label
-          >
+            ><span class="sr-only">Search your service</span></label>
           <input
             type="search"
             v-model="searchInput"

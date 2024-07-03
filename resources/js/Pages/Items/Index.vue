@@ -149,7 +149,7 @@ const closeUpdateModal = () => {
                   <option value="General medicine">General medicine</option>
                   <option value="Gynecologist">Gynecologist</option>
                   <option value="Neurologist">Neurologist</option>
-                  <option value="Pphtalmologist">Ophtalmologist</option>
+                  <option value="Ophtalmologist">Ophtalmologist</option>
                   <option value="Physiotherapist">Physiotherapist</option>
                   <option value="Mental health">Mental health</option>
                   <option value="Rheumatologist">Rheumatologist</option>
@@ -313,7 +313,7 @@ const closeUpdateModal = () => {
                   <option value="General medicine">General medicine</option>
                   <option value="Gynecologist">Gynecologist</option>
                   <option value="Neurologist">Neurologist</option>
-                  <option value="Pphtalmologist">Ophtalmologist</option>
+                  <option value="Ophtalmologist">Ophtalmologist</option>
                   <option value="Physiotherapist">Physiotherapist</option>
                   <option value="Mental health">Mental health</option>
                   <option value="Rheumatologist">Rheumatologist</option>
