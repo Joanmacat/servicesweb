@@ -191,6 +191,15 @@ Route::get('/women-rights-in-andorra', function () {
     ]);
 });
 
+Route::get('/health-tourism-in-andorra', function () {
+    return Inertia::render('Articles/Health-tourism-in-andorra', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
