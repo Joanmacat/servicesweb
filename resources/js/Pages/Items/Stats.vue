@@ -25,7 +25,6 @@ const mentalhealthServices = props.items.filter(item => item.category_name === "
 const rheumatologistServices = props.items.filter(item => item.category_name === "Rheumatologist");
 const pediatricianServices = props.items.filter(item => item.category_name === "Pediatrician");
 const traumatologistServices = props.items.filter(item => item.category_name === "Traumatologist");
-const urologistServices = props.items.filter(item => item.category_name === "Urologist");
 /** END HEALTH SERVICES **/
 
 const familyofficeServices = props.items.filter(item => item.category_name === "Family Office");
@@ -191,14 +190,6 @@ const insuranceServices = props.items.filter(item => item.category_name === "Ins
                             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Traumatologist</h4>
                             <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ traumatologistServices.length }}</p>
                             <p class="mt-1 text-gray-500">Number of traumatologists services</p>
-                            </div>
-                            <!-- End Stats -->
-
-                            <!-- Stats -->
-                            <div>
-                            <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">Urologist</h4>
-                            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-teal-600">{{ urologistServices.length }}</p>
-                            <p class="mt-1 text-gray-500">Number of urologists services</p>
                             </div>
                             <!-- End Stats -->
 

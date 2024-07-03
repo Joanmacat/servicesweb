@@ -81,7 +81,7 @@ const hashtagToSearchInput = (value) => {
 }
 
 /** HealthList **/
-const healthList = ref(["Dentist", "General medicine", "Gynecologist", "Neurologist", "Ophtalmologist", "Physiotherapist", "Mental health", "Pediatrician", "Rheumatology", "Traumatologist", "Urologist"]);
+const healthList = ref(["Dentist", "General medicine", "Gynecologist", "Neurologist", "Ophtalmologist", "Physiotherapist", "Mental health", "Pediatrician", "Rheumatologist", "Traumatologist"]);
 
 const healthFilteredList = computed(() => {
   return healthList.value.filter(item => item === "Dentist" ||
@@ -93,8 +93,7 @@ const healthFilteredList = computed(() => {
     item === "Mental health" ||
     item === "Rheumatologist" ||
     item === "Pediatrician" ||
-    item === "Traumatologist" ||
-    item === "Urologist"
+    item === "Traumatologist"
   );
 })
 
@@ -121,7 +120,7 @@ const healthFilteredList = computed(() => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Connect with 191 available services in Andorra and counting!"
+            placeholder="Connect with 212 available services in Andorra and counting!"
             @keyup.enter="focusForm()"
           />
         </div>
