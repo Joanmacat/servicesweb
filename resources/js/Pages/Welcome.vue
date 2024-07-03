@@ -5,7 +5,7 @@ import Home from "./Items/Home.vue";
 </script>
 
 <template>
-    <Head title="Andorra Connect - You are in the right place" />
+    <Head title="Andorra Connect - Contact business, health, services and real estate" />
     <Home></Home>
 </template>
 
