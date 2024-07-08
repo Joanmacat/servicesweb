@@ -148,7 +148,7 @@ const healthFilteredList = computed(() => {
     <br />
     
     <!-- COLLAPSE COMPANIES BUTTON -->
-    <button @click="toggleCollapse" type="button" class="hs-collapse-toggle mr-6 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
+    <button type="button" class="hs-collapse-toggle mr-6 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-400 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
       Companies
       <svg class="hs-collapse-open:rotate-180 flex-shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m6 9 6 6 6-6"></path>
@@ -164,7 +164,7 @@ const healthFilteredList = computed(() => {
     </button>
 
     <!-- Companies collapse-->
-    <div v-once id="hs-basic-collapse-heading" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
+    <div id="hs-basic-collapse-heading" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
       <div class="mt-5">
         <p class="text-gray-500 dark:text-neutral-400">
           <!-- HASHTAGS BUTTON -->
@@ -177,7 +177,7 @@ const healthFilteredList = computed(() => {
     <!-- Companies collapse -->
 
     <!-- Health collapse-->
-    <div v-once id="hs-basic-collapse-heading-health" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
+    <div id="hs-basic-collapse-heading-health" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
       <div class="mt-5">
         <p class="text-gray-500 dark:text-neutral-400">
           <!-- HASHTAGS BUTTON -->
