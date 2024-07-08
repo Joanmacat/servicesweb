@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index, follow">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="Discover a range of services at Andorraconnect.com for info on companies, businesses, health, opportunities, real estate in Andorra. Contact us for help in our website!">
         <link rel="canonical" href="https://andorraconnect.com" />
 
