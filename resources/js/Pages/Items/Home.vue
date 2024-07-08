@@ -12,11 +12,13 @@ function focusForm() {
 }
 
 const props = defineProps({
-    items: Array
+    items: Array,
   })
 
 const displayedItems = ref([]); // Array de elementos que se mostrarán
 const showMore = ref(false); // Estado de "Load more"
+const totalItems = "Connect with " + props.items.length + " available services in Andorra and counting!"
+
 let showMoreButtonText = 'Load more';
 
 const loadMore = () => {
@@ -120,7 +122,7 @@ const healthFilteredList = computed(() => {
             name="hs-search-article-1"
             id="hs-search-article-1"
             class="p-3 block w-full border-transparent rounded-md focus:border-teal-600 focus:ring-teal-600 dark:bg-gray-800 dark:text-gray-400"
-            placeholder="Connect with 212 available services in Andorra and counting!"
+            :placeholder=totalItems
             @keyup.enter="focusForm()"
           />
         </div>
