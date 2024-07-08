@@ -5,7 +5,7 @@ import Footer from '../../Components/Footer.vue';
 
 </script>
 <template>
-    <Head title="Services web project 0.0.1" />
+    <Head title="Andorra Connect" />
     <HomeNavbar></HomeNavbar>
     <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
@@ -216,7 +216,7 @@ Platform will be subject to automated processing and will be to be part of the f
 by ANDORRACONNECT, as responsible for the files duly registered in the General Registry of the
 Andorran and Spanish Data Protection Agency, for the purposes of managing Users registered on the
 ANDORRACONNECT Platform.</p>
-<p class="mb-5 dark:text-gray-400"><strong>Responsible for the treatment:</strong> ANDORRACONNECT, SL NIF: B25828286</p>
+<p class="mb-5 dark:text-gray-400"><strong>Responsible for the treatment:</strong> ANDORRACONNECT</p>
 <p class="mb-5 dark:text-gray-400"><strong>Purpose of treatment: </strong>Management and provision of requested services</p>
 <p class="mb-5 dark:text-gray-400"><strong>Recipients of assignments
 or transfers: </strong>No transfer of data to third parties is foreseen.</p>

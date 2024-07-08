@@ -5,7 +5,7 @@ import Footer from '../../Components/Footer.vue';
 </script>
 
 <template>
-<Head title="Fitch ratings Andorra inflation 2024" />
+<Head title="Andorra house pricing breaks records" />
 <HomeNavbar></HomeNavbar>
 <!-- Blog Article -->
 <div class="max-w-2xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
