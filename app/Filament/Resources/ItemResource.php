@@ -29,6 +29,7 @@ class ItemResource extends Resource
                 ->maxLength(255),
                 Forms\Components\Select::make('category_name')
                 ->label('Category name')
+                ->searchable()
                 ->options([
                     "Accountant" => "Accountant",
                     "Advocacy" => "Advocacy",
@@ -39,6 +40,13 @@ class ItemResource extends Resource
                     "Dentist" => "Dentist",
                     "General medicine" => "General medicine",
                     "Gynecologist" => "Gynecologist",
+                    "Neurologist" => "Neurologist",
+                    "Ophtalmologist" => "Ophtalmologist",
+                    "Physiotherapist" => "Physiotherapist",
+                    "Mental health" => "Mental health",
+                    "Pediatrician" => "Pediatrician",
+                    "Rheumatologist" => "Rheumatologist",
+                    "Traumatologist" => "Traumatologist",
                     "Family Office" => "Family Office",
                     "Insurance" => "Insurance",
                     "Onboarding" => "Onboarding",
@@ -62,7 +70,7 @@ class ItemResource extends Resource
                 ->label('Image URL')
                 ->required()
                 ->maxLength(255),
-                Forms\Components\RichEditor::make('description')
+                Forms\Components\TextArea::make('description')
                 ->label('Description')
                 ->required()
                 ->columnSpanFull()
@@ -75,22 +83,50 @@ class ItemResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('company_name')
-                    ->searchable(),
-                    Tables\Columns\TextColumn::make('category_name')
-                    ->searchable(),
-                    Tables\Columns\TextColumn::make('url')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('category_name')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('location')
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('category_name')
+                ->options([
+                    'accountant' => 'Accountant',
+                    'advocacy' => 'Advocacy',
+                    'banking' => 'Banking',
+                    'business' => 'Business',
+                    'consultancy' => 'Consultancy',
+                    'concierge' => 'Concierge',
+                    'dentist' => 'Dentist',
+                    'general medicine' => 'General Medicine',
+                    'gynecologist' => 'Gynecologist',
+                    'neurologist' => 'Neurologist',
+                    'ophtalmologist' => 'Ophtalmologist',
+                    'physiotherapist' => 'Physiotherapist',
+                    'mental health' => 'Mental health',
+                    'pediatrician' => 'Pediatrician',
+                    'rheumatologhist' => 'Rheumatologhist',
+                    'traumatologist' => 'Traumatologist',
+                    "family Office" => "Family Office",
+                    "insurance" => "Insurance",
+                    "onboarding" => "Onboarding",
+                    "real estate" => "Real Estate",
+                ]),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                Tables\Actions\DeleteBulkAction::make(),
+                
+            ]),
             ]);
     }
 
