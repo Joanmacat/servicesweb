@@ -211,7 +211,7 @@ const healthFilteredList = computed(() => {
          :description="item.description"
          :category="item.category_name"
          :map="item.map"
-         :image="item.image_url.value"
+         :image="item.image_url"
          :link="item.url"
        ></Card>
       <!-- END GRID -->
