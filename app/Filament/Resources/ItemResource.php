@@ -70,7 +70,7 @@ class ItemResource extends Resource
                 ->label('Image URL')
                 ->required()
                 ->maxLength(255),
-                Forms\Components\TextArea::make('description')
+                Forms\Components\Textarea::make('description')
                 ->label('Description')
                 ->required()
                 ->columnSpanFull()
