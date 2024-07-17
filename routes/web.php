@@ -200,6 +200,15 @@ Route::get('/health-tourism-in-andorra', function () {
     ]);
 });
 
+Route::get('/agreement-between-andorra-eu', function () {
+    return Inertia::render('Articles/Agreement-between-andorra-eu', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
