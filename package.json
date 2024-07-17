@@ -20,6 +20,7 @@
     "dependencies": {
         "@preline/collapse": "^2.1.0",
         "@preline/dropdown": "^2.1.0",
+        "braces": "^3.0.3",
         "preline": "^2.0.3",
         "vue3-toastify": "^0.2.1"
     }
