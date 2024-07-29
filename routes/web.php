@@ -209,6 +209,15 @@ Route::get('/agreement-between-andorra-eu', function () {
     ]);
 });
 
+Route::get('/andorra-eu-transport-integration', function () {
+    return Inertia::render('Articles/Andorra-eu-transport-integration', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
@@ -243,6 +252,7 @@ Route::get('/', function() {
               'items' => Item::all(),
         ]);
 });
+
 
 Route::get('/stats', function() {
         return Inertia::render('Items/Stats', [

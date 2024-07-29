@@ -109,7 +109,7 @@ class ItemResource extends Resource
                     'physiotherapist' => 'Physiotherapist',
                     'mental health' => 'Mental health',
                     'pediatrician' => 'Pediatrician',
-                    'rheumatologhist' => 'Rheumatologhist',
+                    'rheumatologist' => 'Rheumatologist',
                     'traumatologist' => 'Traumatologist',
                     "family Office" => "Family Office",
                     "insurance" => "Insurance",
