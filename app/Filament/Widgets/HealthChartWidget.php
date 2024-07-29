@@ -19,8 +19,9 @@ class HealthChartWidget extends ChartWidget
         $totalNeurologist = Item::where('category_name', 'Neurologist')->count();
         $totalOphtalmologist = Item::where('category_name', 'Ophtalmologist')->count();
         $totalPhysiotherapist = Item::where('category_name', 'Physiotherapist')->count();
+        $totalMentalHealth = Item::where('category_name', 'Mental Health')->count();
         $totalPediatrician = Item::where('category_name', 'Pediatrician')->count();
-        $totaRheumatologist = Item::where('category_name', 'Rheumatologist')->count();
+        $totalRheumatologist = Item::where('category_name', 'Rheumatologist')->count();
         $totaTraumatologist = Item::where('category_name', 'Traumatologist')->count();
         return [
             
@@ -29,12 +30,14 @@ class HealthChartWidget extends ChartWidget
                     'label' => 'Health',
                     'data' => [
                         $totalDentist,
+                        $totalGeneralMedicine,
                         $totalGynecologist,
                         $totalNeurologist,
                         $totalOphtalmologist,
                         $totalPhysiotherapist,
+                        $totalMentalHealth,
                         $totalPediatrician,
-                        $totaRheumatologist,
+                        $totalRheumatologist,
                         $totaTraumatologist,
                     ],
                     'backgroundColor' => [
