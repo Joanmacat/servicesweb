@@ -54,10 +54,20 @@ class ItemResource extends Resource
 
                 ])
                 ->required(),
-                Forms\Components\TextInput::make('location')
+                Forms\Components\Select::make('location')
                 ->label('Location')
-                ->required()
-                ->maxLength(255),
+                ->searchable()
+                ->options([
+                    "Andorra la Vella" => "Andorra la Vella",
+                    "Canillo" => "Canillo",
+                    "Encamp" => "Encamp",
+                    "Escaldes-Engordany" => "Escaldes-Engordany",
+                    "La Massana" => "La Massana",
+                    "Ordino" => "Ordino",
+                    "Sant Julià de Lòria" => "Sant Julià de Lòria",
+
+                ])
+                ->required(),
                 Forms\Components\TextInput::make('url')
                 ->label('URL')
                 ->required()
