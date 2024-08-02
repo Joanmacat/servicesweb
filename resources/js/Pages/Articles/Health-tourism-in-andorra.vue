@@ -2,10 +2,12 @@
 import { Head } from '@inertiajs/vue3';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 import Footer from '../../Components/Footer.vue';
+
+document.title = "Health Tourism in Andorra: A Haven for Wellness and Well-Being - Andorra Connect"
 </script>
 
 <template>
-<Head title="Andorra health tourism" />
+<Head title="Health Tourism in Andorra: A Haven for Wellness and Well-Being" />
 <HomeNavbar></HomeNavbar>
 <!-- Blog Article -->
 <div class="max-w-2xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">

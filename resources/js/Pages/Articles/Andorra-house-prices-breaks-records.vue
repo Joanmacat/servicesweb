@@ -2,6 +2,8 @@
 import { Head } from '@inertiajs/vue3';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 import Footer from '../../Components/Footer.vue';
+
+document.title = "Andorra’s Soaring House Prices - Andorra Connect"
 </script>
 
 <template>

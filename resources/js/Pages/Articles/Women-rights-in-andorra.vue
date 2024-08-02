@@ -2,10 +2,12 @@
 import { Head } from '@inertiajs/vue3';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 import Footer from '../../Components/Footer.vue';
+
+document.title = "Advancing Women’s Rights in Andorra - Andorra Connect"
 </script>
 
 <template>
-<Head title="Women rights in Andorra" />
+<Head title="Advancing Women’s Rights in Andorra" />
 <HomeNavbar></HomeNavbar>
 <!-- Blog Article -->
 <div class="max-w-2xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
