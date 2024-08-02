@@ -2,10 +2,12 @@
 import { Head } from '@inertiajs/vue3';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 import Footer from '../../Components/Footer.vue';
+
+document.title = "Andorra’s Economic Outlook: Balancing Inflation and Growth - Andorra Connect"
 </script>
 
 <template>
-<Head title="Fitch ratings Andorra inflation 2024" />
+<Head title="Andorra’s Economic Outlook: Balancing Inflation and Growth" />
 <HomeNavbar></HomeNavbar>
 <!-- Blog Article -->
 <div class="max-w-2xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">

@@ -1,10 +1,15 @@
 <script setup>
+
 import { Head } from '@inertiajs/vue3';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 import Footer from '../../Components/Footer.vue';
+
+document.title = "The EU Agreement Should “Facilitate the Internationalization” of Andorran Companies - Andorra Connect"
+
 </script>
 
 <template>
+
 <Head title="The EU Agreement Should “Facilitate the Internationalization” of Andorran Companies." />
 <HomeNavbar></HomeNavbar>
 <!-- Blog Article -->
@@ -95,4 +100,5 @@ import Footer from '../../Components/Footer.vue';
 </div>
 <!-- End Blog Article -->
 <Footer></Footer>
+
 </template>

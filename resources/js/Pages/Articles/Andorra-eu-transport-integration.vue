@@ -2,6 +2,8 @@
 import { Head } from '@inertiajs/vue3';
 import HomeNavbar from '../../Components/HomeNavbar.vue';
 import Footer from '../../Components/Footer.vue';
+
+document.title = "Integration of Transport between Spain and Andorra into European Regulation - Andorra Connect"
 </script>
 
 <template>
