@@ -218,6 +218,15 @@ Route::get('/andorra-eu-transport-integration', function () {
     ]);
 });
 
+Route::get('/andorra-considering-charging-foreign-cars', function () {
+    return Inertia::render('Articles/Andorra-considering-charging-foreign-cars', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
