@@ -227,6 +227,15 @@ Route::get('/andorra-considering-charging-foreign-cars', function () {
     ]);
 });
 
+Route::get('/andorra-laseu-flights-palma', function () {
+    return Inertia::render('Articles/Andorra-laseu-flights-palma', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');

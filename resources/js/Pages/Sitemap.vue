@@ -39,9 +39,12 @@ import Footer from '../Components/Footer.vue';
         <li><a href="/andorra-digital-content-creators" class="text-teal-500 hover:text-teal-700">-- Why Andorra is a Top place for Digital Content Creators</a></li>
         <li><a href="/eu-agreement-should-facilitate-the-internationalization" class="text-teal-500 hover:text-teal-700">-- The EU Agreement Should “Facilitate the Internationalization” of Andorran Companies.</a></li>
         <li><a href="/women-rights-in-andorra" class="text-teal-500 hover:text-teal-700">-- Advancing Women’s Rights in Andorra</a></li>
-        <li><a href="/women-rights-in-andorra" class="text-teal-500 hover:text-teal-700">-- Health tourism in Andorra</a></li>
-        <li><a href="/women-rights-in-andorra" class="text-teal-500 hover:text-teal-700">-- AR+I Sees a Positive Impact of the Agreement Between Andorra and the EU on Economic Growth</a></li>
-        <li><a href="/women-rights-in-andorra" class="text-teal-500 hover:text-teal-700">-- Integration of Transport between Spain and Andorra into European Regulation</a></li>
+        <li><a href="/health-tourism-in-andorra" class="text-teal-500 hover:text-teal-700">-- Health tourism in Andorra</a></li>
+        <li><a href="/agreement-between-andorra-eu" class="text-teal-500 hover:text-teal-700">-- AR+I Sees a Positive Impact of the Agreement Between Andorra and the EU on Economic Growth</a></li>
+        <li><a href="/andorra-eu-transport-integration" class="text-teal-500 hover:text-teal-700">-- Integration of Transport between Spain and Andorra into European Regulation</a></li>
+        <li><a href="/andorra-considering-charging-foreign-cars" class="text-teal-500 hover:text-teal-700">-- Andorra is considering charging foreign cars that wish to enter the country</a></li>
+        <li><a href="/andorra-laseu-flights-palma" class="text-teal-500 hover:text-teal-700">-- New Year-Round Flights: Andorra-La Seu d’Urgell to Palma!</a></li>
+
 
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
         <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>
