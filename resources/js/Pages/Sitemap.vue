@@ -44,6 +44,7 @@ import Footer from '../Components/Footer.vue';
         <li><a href="/andorra-eu-transport-integration" class="text-teal-500 hover:text-teal-700">-- Integration of Transport between Spain and Andorra into European Regulation</a></li>
         <li><a href="/andorra-considering-charging-foreign-cars" class="text-teal-500 hover:text-teal-700">-- Andorra is considering charging foreign cars that wish to enter the country</a></li>
         <li><a href="/andorra-laseu-flights-palma" class="text-teal-500 hover:text-teal-700">-- New Year-Round Flights: Andorra-La Seu d’Urgell to Palma!</a></li>
+        <li><a href="/andorra-top-country-holidays" class="text-teal-500 hover:text-teal-700">-- Top Countries with the Most Paid Holidays: Andorra Ranks Second with 44 Days</a></li>
 
 
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
