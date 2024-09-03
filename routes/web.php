@@ -245,6 +245,14 @@ Route::get('/andorra-top-country-holidays', function () {
     ]);
 });
 
+Route::get('/andorra-safest-country-world', function () {
+    return Inertia::render('Articles/Andorra-safest-country-world', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
