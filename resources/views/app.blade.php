@@ -22,8 +22,7 @@
 
         gtag('config', 'G-J0XK0LF9SG');
         </script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2590243657949046"
-            crossorigin="anonymous"></script>
+        <script type="text/javascript"> var infolinks_pid = 3426281; var infolinks_wsid = 0; </script> <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
