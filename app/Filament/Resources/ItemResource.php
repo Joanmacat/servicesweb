@@ -132,7 +132,7 @@ class ItemResource extends Resource
                 Tables\Actions\DeleteAction::make(),
                 Tables\Actions\ViewAction::make(),
             ])
-            ->bulkActions([
+            ->groupedBulkActions([
                 Tables\Actions\BulkActionGroup::make([
                 Tables\Actions\DeleteBulkAction::make(),
                 
