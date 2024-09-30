@@ -22,8 +22,10 @@
 
         gtag('config', 'G-J0XK0LF9SG');
         </script>
-        <script type="text/javascript"> var infolinks_pid = 3426281; var infolinks_wsid = 0; </script> <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
-        <!-- Scripts -->
+        <!-- Scripts ADS -->
+        <script type='text/javascript' src='//pl24546771.cpmrevenuegate.com/55/ca/89/55ca89e775004ff65fa86687e73b4af2.js'></script>
+        <script async="async" data-cfasync="false" src="//pl24546785.cpmrevenuegate.com/58d870d61b8e35bb07ee5873e747efc4/invoke.js"></script>
+        <div id="container-58d870d61b8e35bb07ee5873e747efc4"></div>
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
     </head>
