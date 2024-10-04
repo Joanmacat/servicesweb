@@ -46,6 +46,7 @@ import Footer from '../Components/Footer.vue';
         <li><a href="/andorra-laseu-flights-palma" class="text-teal-500 hover:text-teal-700">-- New Year-Round Flights: Andorra-La Seu d’Urgell to Palma!</a></li>
         <li><a href="/andorra-top-country-holidays" class="text-teal-500 hover:text-teal-700">-- Top Countries with the Most Paid Holidays: Andorra Ranks Second with 44 Days</a></li>
         <li><a href="/andorra-top-country-holidays" class="text-teal-500 hover:text-teal-700">-- A new index ranks Andorra as the safest country in the world</a></li>
+        <li><a href="/andorra-hosts-freeride-world-championship-2026" class="text-teal-500 hover:text-teal-700">-- Andorra to Host the First Ever Freeride World Championships in 2026</a></li>
 
         <li><a href="/contact" class="text-teal-500 hover:text-teal-700">- Contact</a></li>
         <li><a href="/cookies" class="text-teal-500 hover:text-teal-700">- Cookies</a></li>

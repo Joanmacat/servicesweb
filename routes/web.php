@@ -253,6 +253,15 @@ Route::get('/andorra-safest-country-world', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::get('/andorra-hosts-freeride-world-championship-2026', function () {
+    return Inertia::render('Articles/Andorra-hosts-freeride-world-championship-2026', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
 /*** END BLOG POSTS ***/
 
 //Route::post('/contact', ContactController::class)->name('contact');
